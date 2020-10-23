@@ -29,13 +29,13 @@
         </div>
         <div class="top-bar-right" id="mean_nav">
           <ul class="vertical medium-horizontal menu menu-links">
-            <li><a href="#concil">concelho</a></li>
-            <li><a href="#roster">roster</a></li>
-            <li><a href="#guides">guias</a></li>
-            <li><a href="#apply">apply now</a></li>
-            <li><a href="#streams"><i class="fas fa-tv"></i> streams</a></li>
+            <li><a href="#concil"><i class="fas fa-biohazard"></i> manifesto</a></li>
+            <li><a href="#roster"><i class="fas fa-users"></i> roster</a></li>
+            <li><a href="#apply"><i class="far fa-edit"></i> apply</a></li>
+            {{-- <li><a href="#guides">guias</a></li> --}}
+            <li><a href="#stream"><i class="fas fa-desktop"></i> stream</a></li>
+            <li><a href="#contact"><i class="far fa-envelope"></i> contato</a></li>
             <li><a href="#" class="yt"><i class="fab fa-youtube"></i> youtube</a></li>
-            <li><a href="#contact"><i class="fas fa-envelope"></i> contato</a></li>
           </ul>
         </div>
       </nav>

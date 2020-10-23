@@ -1,0 +1,227 @@
+// ZURB Foundation
+@import "settings";
+@import "node_modules/foundation-sites/scss/foundation";
+@include foundation-everything();
+
+// Font Awesome
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
+// Global Fonts
+@import url("http://fonts.googleapis.com/css?family=Raleway|Sedgwick+Ave:400italic,700italic,400,700");
+$font-raleway: "Raleway", sans-serif;
+$font-sedgwick: "Sedgwick Ave", cursive;
+
+// App Style
+body,
+html {
+    height: 100%;
+}
+
+/**   Hero   */
+.hero {
+    height: calc(100%);
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(
+            to bottom,
+            rgba(225, 215, 166, 0.1),
+            rgba(17, 17, 17, 0.5)
+        ),
+        url("../images/hero-manifesto.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+header {
+    .top-bar {
+        background-color: transparent;
+        padding: 0 80px;
+        .menu {
+            background-color: transparent;
+            margin-top: 70px;
+            li,
+            a {
+                font-family: $font-raleway;
+                text-transform: uppercase;
+                font-size: 14px;
+                color: #3e1c00;
+                font-weight: bold;
+                :hover {
+                    text-shadow: 1px 1px #494949;
+                }
+            }
+        }
+    }
+}
+
+.concil {
+    height: calc(100%);
+    max-width: 670px;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+    .title {
+        .mean_title,
+        .sub_title {
+            text-align: center;
+            color: #454545;
+        }
+        .mean_title {
+            font-size: 48px;
+            font-family: $font-sedgwick;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+        .sub_title {
+            font-size: 18px;
+            font-family: $font-raleway;
+            font-weight: lighter;
+        }
+    }
+}
+
+/** roster */
+.roster {
+    background-image: url("../images/hachure.jpg");
+    background-repeat: repeat;
+    height: calc(100%);
+    max-width: calc(100%);
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+    .title {
+        .mean_title,
+        .sub_title {
+            text-align: center;
+            color: #454545;
+        }
+        .mean_title {
+            font-size: 48px;
+            font-family: $font-sedgwick;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+        .sub_title {
+            font-size: 18px;
+            font-family: $font-raleway;
+            font-weight: lighter;
+        }
+    }
+    .roster_list {
+        width: 100%;
+        .player,
+        .class,
+        .social {
+            text-align: center;
+            color: #454545;
+            margin: 0 auto;
+        }
+        .player {
+            font-size: 24px;
+            font-family: $font-sedgwick;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+        .class {
+            font-size: 16px;
+            font-family: $font-sedgwick;
+            font-weight: lighter;
+        }
+        .social {
+            img {
+                margin-top: 5px;
+                width: 24px;
+            }
+        }
+    }
+}
+
+/* fancy button */
+.btn_fancy {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: #454545;
+    font-family: $font-raleway;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 16px 36px;
+    border-radius: 2px;
+    background: transparent;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    .text_layer {
+        position: relative;
+    }
+    :hover,
+    :focus {
+        color: #454545;
+    }
+
+    .border_layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 1px dashed #000000;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+    }
+    .solid_layer {
+        position: absolute;
+        top: 4px;
+        left: -4px;
+        width: 100%;
+        height: 100%;
+        background: #fbdd90;
+        border-radius: 2px;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+    }
+    :hover .border_layer {
+        -webkit-transform: translate(2px, -2px);
+        -ms-transform: translate(2px, -2px);
+        -o-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+    }
+    :hover .solid_layer {
+        -webkit-transform: translate(-2px, 2px);
+        -ms-transform: translate(-2px, 2px);
+        -o-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
+    }
+}
+/** back to top */
+#back_top {
+    text-decoration: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9999;
+    opacity: 0;
+    .btn_fancy {
+        padding: 6px 16px;
+        :hover .border_layer {
+            -webkit-transform: translate(1px, -1px);
+            -ms-transform: translate(1px, -1px);
+            -o-transform: translate(1px, -1px);
+            transform: translate(1px, -1px);
+        }
+        :hover .solid_layer {
+            -webkit-transform: translate(-1px, 1px);
+            -ms-transform: translate(-1px, 1px);
+            -o-transform: translate(-1px, 1px);
+            transform: translate(-1px, 1px);
+        }
+    }
+}

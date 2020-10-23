@@ -1,7 +1,10 @@
 // ZURB Foundation
 @import "settings";
+@import "node_modules/motion-ui/motion-ui";
 @import "node_modules/foundation-sites/scss/foundation";
-@include foundation-everything();
+@include foundation-everything(true);
+@include motion-ui-transitions;
+@include motion-ui-animations;
 
 // Font Awesome
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
@@ -37,34 +40,16 @@ html {
     position: relative;
 }
 
-header {
-    .top-bar {
-        background-color: transparent;
-        padding: 0 20px;
-        .menu {
-            background-color: transparent;
-            margin-top: 70px;
-            li,
-            a {
-                font-family: $font-raleway;
-                text-transform: uppercase;
-                font-size: 14px;
-                color: #3e1c00;
-                font-weight: bold;
-                :hover {
-                    text-shadow: 1px 1px #494949;
-                }
-            }
-        }
-    }
-}
-
+/** concil & testimonials */
 .concil {
+    width: calc(100%);
     height: calc(100%);
-    max-width: 670px;
     margin: 0 auto;
-    padding: 40px 0;
     text-align: center;
+    background: linear-gradient(
+        to bottom,
+        rgba(17, 17, 17, 0.5) rgba(225, 215, 166, 0.8)
+    );
     .title {
         .mean_title,
         .sub_title {
@@ -72,27 +57,83 @@ header {
             color: #454545;
         }
         .mean_title {
+            padding-top: 40px;
             font-size: 48px;
             font-family: $font-sedgwick;
             font-weight: bolder;
             text-transform: uppercase;
+            margin: 0 auto;
         }
         .sub_title {
             font-size: 18px;
             font-family: $font-raleway;
             font-weight: lighter;
+            margin-bottom: 100px;
+        }
+    }
+
+    .testimonial-slider-container {
+        width: calc(75%);
+        height: calc(100%);
+        margin: 0 auto;
+        .orbit-previous {
+            color: $black;
+            vertical-align: middle;
+            font-size: 40px;
+        }
+        .orbit-next {
+            color: $black;
+            vertical-align: middle;
+        }
+        .testimonial-slide {
+            display: flex;
+            margin-top: 5rem;
+            justify-content: center;
+            border-bottom: 1px dashed #0a0a0a;
+            .testimonial-title,
+            .testimonial-author,
+            .testimonial-text {
+                padding: 0 3rem;
+            }
+            .testimonial-title,
+            .testimonial-author {
+                font-family: $font-sedgwick;
+            }
+            .testimonial-title {
+                text-align: justify;
+                font-style: italic;
+                font-size: 24px;
+                margin-top: 3rem;
+            }
+            .testimonial-author {
+                text-align: right;
+                font-style: italic;
+                font-size: 14px;
+                .author {
+                    color: #3e1c00;
+                    font-weight: bolder;
+                    font-size: 21px;
+                }
+            }
+            .testimonial-text {
+                text-align: justify;
+                font-family: $font-raleway;
+            }
+            .testimonial-photo {
+                max-width: 300px;
+            }
         }
     }
 }
 
 /** roster */
 .roster {
-    background-image: url("../images/hachure.jpg");
+    background-image: url("../images/hachure.png");
     background-repeat: repeat;
     height: calc(100%);
     max-width: calc(100%);
     margin: 0 auto;
-    padding: 40px 0;
+    // padding: 40px 0;
     text-align: center;
     .title {
         .mean_title,
@@ -222,6 +263,29 @@ header {
             -ms-transform: translate(-1px, 1px);
             -o-transform: translate(-1px, 1px);
             transform: translate(-1px, 1px);
+        }
+    }
+}
+
+/** header */
+header {
+    .top-bar {
+        background-color: transparent;
+        padding: 0 20px;
+        .menu {
+            background-color: transparent;
+            margin-top: 70px;
+            li,
+            a {
+                font-family: $font-raleway;
+                text-transform: uppercase;
+                font-size: 14px;
+                color: #3e1c00;
+                font-weight: bold;
+                :hover {
+                    text-shadow: 1px 1px #494949;
+                }
+            }
         }
     }
 }

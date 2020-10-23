@@ -47,11 +47,56 @@
   <!-- start concil section -->
   <section class="concil" id="concil">
     <div class="title">
-      <p class="mean_title">concelho</p>
+      <p class="mean_title">manifesto - o conselho</p>
       <p class="sub_title">
         <em>"Na batalha, o primeiro passo para a vitória é o desejo de vencer!"</em>
       </p>
     </div>
+
+    <!-- slider code -->
+    <div class="orbit testimonial-slider-container" id="app-concil" role="region" aria-label="testimonial-slider"
+      data-orbit>
+      <ul class="orbit-container">
+        <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span><i
+            class="fas fa-angle-left"></i></button>
+        <button class="orbit-next"><span class="show-for-sr">Next Slide</span><i
+            class="fas fa-angle-right"></i></button>
+
+        <!-- content slide -->
+        @foreach(config('global.testimonials') as $k => $v)
+        <li class="orbit-slide">
+          <div class="testimonial-slide">
+            <div class="grid-x grid-margin-x grid-padding-x">
+              <div class="cell small-12 medium-9">
+                <p class="testimonial-title">
+                  "{{ $v['title'] }}"
+                </p>
+                <p class="testimonial-author">by <span class="author">{{ $k }}</span></p>
+                <br />
+                <p class="testimonial-text">{{ $v['text'] }}</p>
+              </div>
+              <div class="cell small-12 medium-3 align-self-middle testimonial-photo">
+                <img src="{{ asset("images/{$v['photo']}.jpg") }}">
+              </div>
+            </div>
+          </div>
+        </li>
+        @endforeach
+        <!-- end content slide -->
+
+      </ul>
+      <nav class="orbit-bullets">
+        <button class="is-active" data-slide="0">
+          <span class="show-for-sr">First slide details.</span>
+          <span class="show-for-sr" data-slide-active-label>Current Slide</span>
+        </button>
+        @for ($i = 1; $i < sizeof(config('global.testimonials')); $i++) <button data-slide="{{ $i }}"></button>
+          @endfor
+      </nav>
+    </div>
+
+    <!-- slider close -->
+
   </section>
   <!-- end concil section -->
 
@@ -59,12 +104,12 @@
 
   <!-- start roster section -->
   <section class="roster" id="roster">
-    <div class="title">
+    {{-- <div class="title">
       <p class="mean_title">roster</p>
       <p class="sub_title">
         <em>""</em>
       </p>
-    </div>
+    </div> --}}
     <div class="grid-x grid-margin-x roster_list">
       <!-- start roster list -->
       @for ($r = 0, $break=1; $r < sizeof($roster); $r++, $break++) <div class="cell small-6 medium-4 large-2">
@@ -78,11 +123,11 @@
               src="{{ asset('images/rio.png') }}" /></a>
         </span>
     </div>
-    @if (($break % 6) === 0)
+    {{-- @if (($break % 6) === 0)
     <div class="cell">
       <hr />
     </div>
-    @endif
+    @endif --}}
     @endfor
     <!--    End Roster List    -->
     </div>
@@ -100,13 +145,8 @@
 
   <!-- include scripts -->
   <script src="{{ asset('js/app.js') }}"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
-    integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"
-    integrity="sha512-BLT+loVwmqdzlGIU9gxbSpRUwhs9I1uWkNkdAJEUM82s337R9T0pBk007MwaJjVTGhOHsovV4y6o/IwscSAglw=="
-    crossorigin="anonymous"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
 </body>
 
 </html>

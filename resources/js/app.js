@@ -9,18 +9,21 @@ global.$ = global.jQuery = require('jquery');
 require('what-input');
 require('foundation-sites');
  
- 
 // App Code
-$(function() {
-  $(document).foundation();
 
-  /** mean navigation menu scroll to */
+/** jQuery library */
+$(function() {
+
+    /** initialize foundation */
+    $(document).foundation();
+
+    /** mean navigation menu scroll to */
     $("#mean_nav ul li a").on('click', function(e) {
         e.preventDefault();
         scrollTo($(this).attr("href"), 900, "easeInOutCubic");
     });
 
-  /** btn: back to top */
+    /** btn: back to top */
     var back_top = $("#back_top");
     back_top.on('click', function(e) {
         e.preventDefault();

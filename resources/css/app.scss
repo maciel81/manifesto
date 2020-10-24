@@ -56,7 +56,7 @@ body {
     background: linear-gradient(
         to bottom,
         rgba(10, 10, 10, 0.95),
-        rgba(127, 127, 127, 0.85)
+        rgba(225, 215, 166, 0.5)
     );
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -69,13 +69,13 @@ body {
             text-align: center;
         }
         .mean_title {
-            padding-top: 40px;
+            padding-top: 20px;
             font-size: 48px;
             font-family: $font-sedgwick;
             font-weight: bolder;
             text-transform: uppercase;
             margin: 0 auto;
-            color: rgb(225, 215, 166);
+            color: rgba(225, 215, 166, 0.5);
         }
         .sub_title {
             font-size: 18px;

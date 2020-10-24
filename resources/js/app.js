@@ -48,42 +48,48 @@ $(function() {
       width: 400,
       height: 300,
       autoplay: false,
-      layout: 'video'
+      layout: 'video',
+      parent: 'localhost',
     });
     new Twitch.Embed("zetohaysoul", {
       channel: "zetohaysoul",
       width: 400,
       height: 300,
       autoplay: false,
-      layout: 'video'
+        layout: 'video',
+      parent: 'localhost',
     });
     new Twitch.Embed("eyimshadow", {
       channel: "eyimshadow",
       width: 400,
       height: 300,
       autoplay: false,
-      layout: 'video'
+      layout: 'video',
+      parent: 'localhost',
     });
     new Twitch.Embed("loljenkins", {
       channel: "loljenkins",
       width: 400,
       height: 300,
       autoplay: false,
-      layout: 'video'
+      layout: 'video',
+      parent: 'localhost',
     });
     new Twitch.Embed("paulokazan", {
       channel: "paulokazan",
       width: 400,
       height: 300,
       autoplay: false,
-      layout: 'video'
+      layout: 'video',
+      parent: 'localhost',
     });
     // new Twitch.Embed("paulokazan", {
     //   channel: "paulokazan",
     //   width: 400,
     //   height: 300,
     //   autoplay: false,
-    //   layout: 'video'
+    //   layout: 'video',
+    // parent: 'localhost',
     // });
     // 
 

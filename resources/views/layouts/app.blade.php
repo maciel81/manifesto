@@ -138,9 +138,18 @@
   </section>
   <!-- end roster section -->
 
+  <!--  start quote section  -->
+  <section class="quote">
+    <blockquote>
+      <p>Para que <span class="strong">todos</span> possam ser ouvidos.</p>
+      <hr />
+      <span class="author">manifesto</span>
+    </blockquote>
+  </section>
+  <!--  end quote section  -->
 
   <!-- start contact section -->
-  <section class="apply" id="apply">
+  <footer class="apply" id="apply">
     {{-- <div class="title">
       <p class="mean_title">Para que <span class="strong">todos</span> possam ser ouvidos.</p>
       <p class="sub_title">&nbsp;</p>
@@ -167,7 +176,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </footer>
   <!-- end apply section -->
 
   <!-- start btn : back to top -->

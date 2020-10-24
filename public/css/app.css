@@ -15480,24 +15480,74 @@ body {
   width: 24px;
 }
 
-/** apply **/
+/** quote **/
 
-.apply {
-  position: relative;
-  background: linear-gradient(to bottom, rgba(44, 56, 64, 0.8), black);
-  width: calc(100% - 2px);
-  margin: 0 auto;
-  padding: 30px 0;
+.quote {
+  display: table;
+  width: 100%;
+  min-height: calc(50%);
+  background: url(/images/hero-quote.jpg?ca379af9102a2c1ccd2f1d20b7986013) no-repeat 50% 50%;
+  background-size: cover;
   text-align: center;
 }
 
-.apply .title .mean_title,
-.apply .title .sub_title {
+.quote blockquote {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.quote blockquote p {
+  color: #4c4b4b;
+  font-family: "Sedgwick Ave", cursive;
+  font-size: 34px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.quote blockquote .strong {
+  font-family: "Sedgwick Ave", cursive;
+  font-weight: bold;
+}
+
+.quote hr {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 20px;
+  height: 1px;
+  background-color: #4b4b4b;
+}
+
+.quote .author {
+  display: block;
+  color: #4c4b4b;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 0 0;
+}
+
+/** apply **/
+
+footer {
+  position: relative;
+  background: linear-gradient(to bottom, rgba(44, 56, 64, 0.8), black);
+  width: calc(100% - 2px);
+  min-height: calc(50%);
+  margin: 0 auto;
+  padding-top: 15px;
+  text-align: center;
+}
+
+footer .title .mean_title,
+footer .title .sub_title {
   text-align: center;
   color: #fefefe;
 }
 
-.apply .title .mean_title {
+footer .title .mean_title {
   font-size: 48px;
   font-family: "Sedgwick Ave", cursive;
   font-weight: bolder;
@@ -15505,13 +15555,13 @@ body {
   padding-top: 40px;
 }
 
-.apply .title .sub_title {
+footer .title .sub_title {
   font-size: 18px;
   font-family: "Raleway", sans-serif;
   font-weight: lighter;
 }
 
-.apply .assign {
+footer .assign {
   opacity: 1;
   color: #0a0a0a;
   font-size: 24px;
@@ -15521,7 +15571,7 @@ body {
   color: #fefefe;
 }
 
-.apply .assign a {
+footer .assign a {
   color: #fefefe;
   border: 1px dashed #ffae00;
   padding: 5px;
@@ -15529,29 +15579,29 @@ body {
   color: #ffae00;
 }
 
-.apply .translucent-form-overlay {
+footer .translucent-form-overlay {
   color: #fefefe;
 }
 
-.apply .translucent-form-overlay input,
-.apply .translucent-form-overlay textarea {
+footer .translucent-form-overlay input,
+footer .translucent-form-overlay textarea {
   color: #8a8a8a;
 }
 
-.apply .translucent-form-overlay input ::-moz-placeholder, .apply .translucent-form-overlay textarea ::-moz-placeholder {
+footer .translucent-form-overlay input ::-moz-placeholder, footer .translucent-form-overlay textarea ::-moz-placeholder {
   color: #8a8a8a;
 }
 
-.apply .translucent-form-overlay input :-ms-input-placeholder, .apply .translucent-form-overlay textarea :-ms-input-placeholder {
+footer .translucent-form-overlay input :-ms-input-placeholder, footer .translucent-form-overlay textarea :-ms-input-placeholder {
   color: #8a8a8a;
 }
 
-.apply .translucent-form-overlay input ::placeholder,
-.apply .translucent-form-overlay textarea ::placeholder {
+footer .translucent-form-overlay input ::placeholder,
+footer .translucent-form-overlay textarea ::placeholder {
   color: #8a8a8a;
 }
 
-.apply .translucent-form-overlay p {
+footer .translucent-form-overlay p {
   font-family: "Sedgwick Ave", cursive;
   font-size: 16px;
 }

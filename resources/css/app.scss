@@ -202,8 +202,54 @@ body {
     }
 }
 
+/** quote **/
+.quote {
+    display: table;
+    width: 100%;
+    min-height: calc(50%);
+    background: url("../images/hero-quote.jpg") no-repeat 50% 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    blockquote {
+        display: table-cell;
+        vertical-align: middle;
+        p {
+            color: #4c4b4b;
+            font-family: $font-sedgwick;
+            font-size: 34px;
+            font-weight: lighter;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        .strong {
+            font-family: $font-sedgwick;
+            font-weight: bold;
+        }
+    }
+    hr {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        width: 20px;
+        height: 1px;
+        background-color: #4b4b4b;
+    }
+    .author {
+        display: block;
+        color: #4c4b4b;
+        font-family: $font-raleway;
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        margin: 20px 0 0 0;
+    }
+}
+
 /** apply **/
-.apply {
+footer {
     position: relative;
     background: linear-gradient(
         to bottom,
@@ -211,8 +257,9 @@ body {
         rgba(0, 0, 0, 1)
     );
     width: calc(100% - 2px);
+    min-height: calc(50%);
     margin: 0 auto;
-    padding: 30px 0;
+    padding-top: 15px;
     text-align: center;
     .title {
         .mean_title,

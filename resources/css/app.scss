@@ -51,14 +51,13 @@ body {
     $full-width-testimonial-vertical-padding: 2rem;
     min-width: calc(100%);
     min-height: calc(100%);
-    margin: 0 auto;
+    margin: auto;
     text-align: center;
     background: linear-gradient(
-            to bottom,
-            rgba(7, 7, 7, 0.9),
-            rgba(17, 17, 17, 0.75)
-        ),
-        url("../images/hero-holstee.jpg") no-repeat 50% 50%;
+        to bottom,
+        rgba(10, 10, 10, 0.95),
+        rgba(127, 127, 127, 0.85)
+    );
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -89,20 +88,21 @@ body {
     .testimonial-slider-container {
         width: calc(75%);
         margin: 0 auto;
+        vertical-align: bottom;
         .orbit-previous,
         .orbit-next {
             color: rgb(225, 215, 166);
             font-size: 40px;
         }
         .testimonial-slide {
-            display: flex;
-            justify-content: center;
+            min-height: 350px;
             border: 1px dashed rgba(225, 215, 166, 0.8);
             padding: 30px;
+            vertical-align: baseline;
             .testimonial-title,
             .testimonial-author,
             .testimonial-text {
-                padding: 0 3rem;
+                padding: 0 3rem 0 1rem;
             }
             .testimonial-title,
             .testimonial-author {
@@ -131,9 +131,11 @@ body {
                 color: $white;
             }
             .testimonial-photo {
-                margin-left: -10px;
+                margin: auto -10px;
+                padding: 10px 0;
             }
             .quote-path {
+                padding-top: 10px;
                 fill: transparent;
                 stroke: rgb(225, 215, 166);
                 stroke-width: 2.5192;

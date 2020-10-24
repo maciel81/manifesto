@@ -113,16 +113,16 @@
 
   <!-- start roster section -->
   <section class="roster" id="roster">
-    {{-- <div class="title">
+    <div class="title">
       <p class="mean_title">roster</p>
-      <p class="sub_title">
-        <em>""</em>
-      </p>
-    </div> --}}
+      {{-- <p class="sub_title">
+        <em>&nbsp;</em>
+      </p> --}}
+    </div>
     <div class="grid-x grid-margin-x roster_list">
       <!-- start roster list -->
       @for ($r = 0, $break=1; $r < sizeof($roster); $r++, $break++) <div class="cell small-12 medium-2 large-2">
-        <img src="{{ $roster[$r]['image'] }}" alt="" title="" />
+        <img src="{{ $roster[$r]['image'] }}" alt="" title="" class="icon" />
         <p class="player">{{ $roster[$r]['name'] }}</p>
         <p class="class">{{ $roster[$r]['class'] }}</p>
         <span class="social">

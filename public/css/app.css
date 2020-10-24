@@ -15427,6 +15427,7 @@ body {
   height: calc(100%);
   width: calc(100% - 2px);
   margin: 0 auto;
+  padding: 40px 0 0 0;
   text-align: center;
 }
 
@@ -15449,27 +15450,24 @@ body {
   font-weight: lighter;
 }
 
-.roster .roster_list {
-  width: 100%;
-}
-
 .roster .roster_list .player,
 .roster .roster_list .class,
-.roster .roster_list .social {
+.roster .roster_list .social,
+.roster .roster_list .icon {
   text-align: center;
   color: #454545;
   margin: 0 auto;
 }
 
 .roster .roster_list .player {
-  font-size: 24px;
+  font-size: 18px;
   font-family: "Sedgwick Ave", cursive;
   font-weight: bolder;
   text-transform: uppercase;
 }
 
 .roster .roster_list .class {
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Sedgwick Ave", cursive;
   font-weight: lighter;
 }
@@ -15484,7 +15482,7 @@ body {
 .apply {
   background: linear-gradient(to bottom, rgba(44, 56, 64, 0.8), black);
   width: calc(100% - 2px);
-  height: calc(40%);
+  height: calc(41%);
   margin: 0 auto;
   padding: 30px 0;
   text-align: center;

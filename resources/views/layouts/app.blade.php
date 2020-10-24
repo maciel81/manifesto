@@ -159,7 +159,7 @@
             <p>É aqui mesmo</p>
             <input type="text" name="nome" placeholder="Seu nome">
             <input type="text" name="email" placeholder="Seu email">
-            <textarea name="mensagem" placeholder="O que você procesa de nós?" rows="5"></textarea>
+            <textarea name="mensagem" placeholder="O que você procesa de nós?" rows="3"></textarea>
             <button type="button" class="primary button expanded warning hollow">
               É só clicar para enviar
             </button>

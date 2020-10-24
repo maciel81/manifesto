@@ -68,21 +68,22 @@ body {
         .mean_title,
         .sub_title {
             text-align: center;
-            color: rgb(225, 215, 166);
         }
         .mean_title {
             padding-top: 40px;
-            font-size: 32px;
+            font-size: 48px;
             font-family: $font-sedgwick;
             font-weight: bolder;
             text-transform: uppercase;
             margin: 0 auto;
+            color: rgb(225, 215, 166);
         }
         .sub_title {
             font-size: 18px;
             font-family: $font-raleway;
             font-weight: lighter;
-            margin-bottom: 80px;
+            margin-bottom: 60px;
+            color: $white;
         }
     }
     .testimonial-slider-container {

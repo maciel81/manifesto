@@ -15327,23 +15327,24 @@ body {
 .concil .title .mean_title,
 .concil .title .sub_title {
   text-align: center;
-  color: #e1d7a6;
 }
 
 .concil .title .mean_title {
   padding-top: 40px;
-  font-size: 32px;
+  font-size: 48px;
   font-family: "Sedgwick Ave", cursive;
   font-weight: bolder;
   text-transform: uppercase;
   margin: 0 auto;
+  color: #e1d7a6;
 }
 
 .concil .title .sub_title {
   font-size: 18px;
   font-family: "Raleway", sans-serif;
   font-weight: lighter;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
+  color: #fefefe;
 }
 
 .concil .testimonial-slider-container {

@@ -31,9 +31,9 @@
           <ul class="vertical medium-horizontal menu menu-links">
             <li><a href="#concil"><i class="fas fa-biohazard"></i> manifesto</a></li>
             <li><a href="#roster"><i class="fas fa-users"></i> roster</a></li>
+            <li><a href="#streamers"><i class="fas fa-desktop"></i> stream</a></li>
             <li><a href="#apply"><i class="far fa-edit"></i> apply</a></li>
             {{-- <li><a href="#guides">guias</a></li> --}}
-            <li><a href="#stream"><i class="fas fa-desktop"></i> stream</a></li>
             <li><a href="#contact"><i class="far fa-envelope"></i> contato</a></li>
             <li><a href="#" class="yt"><i class="fab fa-youtube"></i> youtube</a></li>
           </ul>
@@ -44,10 +44,11 @@
   <!-- end hero section -->
 
 
+
   <!-- start concil section -->
   <section class="concil" id="concil">
     <div class="title">
-      <p class="mean_title">manifesto - o conselho</p>
+      <p class="mean_title">o concelho</p>
       <p class="sub_title">
         <em>"Na batalha, o primeiro passo para a vitória é o desejo de vencer!"</em>
       </p>
@@ -94,7 +95,6 @@
           @endfor
       </nav>
     </div>
-
     <!-- slider close -->
 
   </section>
@@ -123,15 +123,63 @@
               src="{{ asset('images/rio.png') }}" /></a>
         </span>
     </div>
-    {{-- @if (($break % 6) === 0)
-    <div class="cell">
-      <hr />
-    </div>
-    @endif --}}
     @endfor
-    <!--    End Roster List    -->
+    <!-- end roster list -->
     </div>
-  </section> <!-- end roster section -->
+  </section>
+  <!-- end roster section -->
+
+
+  <!--  start streamers section  -->
+  <section class="streamers" id="streamers">
+    <!-- start streamers titles -->
+    <div class="title">
+      <p class="mean_title">nossos streamers</p>
+      <p class="sub_title">
+        &nbsp;
+      </p>
+    </div>
+    <!-- end streamers titles -->
+
+    <!-- start streamers list -->
+    <div class="grid-x grid-margin-x streamers_list">
+      <div class="cell small-12 medium-4">
+        <iframe src="https://player.twitch.tv/?channel=luquesti&parent=127.0.0.1&muted=true&autoplay=false" height="300"
+          width="100%" frameborder="0" scrolling="no" allowfullscreen="true" autoplay="false">
+        </iframe>
+      </div>
+      <div class="cell small-12 medium-4">
+        <iframe src="https://player.twitch.tv/?channel=zetohaysoul&parent=127.0.0.1&muted=true&autoplay=false"
+          height="300" width="100%" frameborder="0" scrolling="no" allowfullscreen="true" autoplay="false">
+        </iframe>
+      </div>
+      <div class="cell small-12 medium-4">
+        <iframe src="https://player.twitch.tv/?channel=eyimshadow&parent=127.0.0.1&muted=true&autoplay=false"
+          height="300" width="100%" frameborder="0" scrolling="no" allowfullscreen="true">
+        </iframe>
+      </div>
+      <div class="cell">
+        <hr />
+      </div>
+      <div class="cell small-12 medium-4">
+        <iframe src="https://player.twitch.tv/?channel=loljenkins&parent=127.0.0.1&muted=true&autoplay=false"
+          height="300" width="100%" frameborder="0" scrolling="no" allowfullscreen="true">
+        </iframe>
+      </div>
+      <div class="cell small-12 medium-4">
+        <iframe src="https://player.twitch.tv/?channel=paulokazan&parent=127.0.0.1&muted=true&autoplay=false"
+          height="300" width="100%" frameborder="0" scrolling="no" allowfullscreen="true">
+        </iframe>
+      </div>
+      <div class="cell small-12 medium-4">
+        <iframe src="https://player.twitch.tv/?channel=luquesti&parent=127.0.0.1&muted=true&autoplay=false" height="300"
+          width="100%" frameborder="0" scrolling="no" allowfullscreen="true">
+        </iframe>
+      </div>
+    </div>
+    <!--    End Streamers List    -->
+  </section>
+  <!--  End Streamers Section  -->
 
 
   <!-- start btn : back to top -->

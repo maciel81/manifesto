@@ -15461,6 +15461,38 @@ html {
   width: 24px;
 }
 
+/** concil & testimonials */
+
+.streamers {
+  width: calc(100%);
+  height: calc(100%);
+  margin: 0 auto;
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(17, 17, 17, 0.5) rgba(225, 215, 166, 0.8));
+}
+
+.streamers .title .mean_title,
+.streamers .title .sub_title {
+  text-align: center;
+  color: #454545;
+}
+
+.streamers .title .mean_title {
+  padding-top: 40px;
+  font-size: 48px;
+  font-family: "Sedgwick Ave", cursive;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.streamers .title .sub_title {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+  margin-bottom: 40px;
+}
+
 /* fancy button */
 
 .btn_fancy {

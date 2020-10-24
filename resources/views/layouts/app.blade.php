@@ -113,12 +113,12 @@
 
   <!-- start roster section -->
   <section class="roster" id="roster">
-    <div class="title">
-      {{-- <p class="mean_title">roster</p> --}}
+    {{-- <div class="title">
+      <p class="mean_title">roster</p>
       <p class="sub_title">
         <em>nossa equipe</em>
       </p>
-    </div>
+    </div> --}}
     <div class="grid-x grid-margin-x roster_list">
       <!-- start roster list -->
       @for ($r = 0, $break=1; $r < sizeof($roster); $r++, $break++) <div class="cell small-12 medium-2 large-2">

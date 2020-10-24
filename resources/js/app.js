@@ -35,7 +35,7 @@ $(function() {
     }
   
     $(window).on("scroll", function () {
-        if ($(this).scrollTop() > 749) {
+        if ($(this).scrollTop() > 649) {
             back_top.stop().animate({ opacity: 1 }, 250);
         } else {
             back_top.stop().animate({ opacity: 0 }, 250);

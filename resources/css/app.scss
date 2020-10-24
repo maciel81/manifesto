@@ -50,7 +50,7 @@ body {
     $full-width-testimonial-quote-color: $warning-color;
     $full-width-testimonial-vertical-padding: 2rem;
     width: calc(100% - 2px);
-    height: calc(100%);
+    min-height: calc(100%);
     margin: 0 auto;
     text-align: center;
     background: linear-gradient(
@@ -66,7 +66,7 @@ body {
         }
         .mean_title {
             padding-top: 40px;
-            font-size: 48px;
+            font-size: 32px;
             font-family: $font-sedgwick;
             font-weight: bolder;
             text-transform: uppercase;
@@ -76,16 +76,15 @@ body {
             font-size: 18px;
             font-family: $font-raleway;
             font-weight: lighter;
-            margin-bottom: 100px;
+            margin-bottom: 80px;
         }
     }
     .testimonial-slider-container {
         width: calc(75%);
-        height: calc(100%);
         margin: 0 auto;
         .orbit-previous {
             color: $black;
-            vertical-align: middle;
+            vertical-align: bottom;
             font-size: 40px;
         }
         .orbit-next {
@@ -95,9 +94,9 @@ body {
         }
         .testimonial-slide {
             display: flex;
-            margin-top: 5rem;
             justify-content: center;
-            border-bottom: 1px dashed #0a0a0a;
+            border: 1px dashed rgba(225, 215, 166, 0.8);
+            padding: 30px;
             .testimonial-title,
             .testimonial-author,
             .testimonial-text {
@@ -147,11 +146,11 @@ body {
 .roster {
     background-image: url("../images/hachure.png");
     background-repeat: repeat;
-    height: calc(100%);
-    min-height: 100%;
+    // height: calc(100%);
+    min-height: calc(100%);
     width: calc(100% - 2px);
     margin: 0 auto;
-    padding: 20px 0 0 0;
+    padding: 10px 0;
     text-align: center;
     position: relative;
     .title {
@@ -161,7 +160,7 @@ body {
             color: #454545;
         }
         .mean_title {
-            font-size: 48px;
+            font-size: 32px;
             font-family: $font-sedgwick;
             font-weight: bolder;
             text-transform: uppercase;
@@ -186,7 +185,7 @@ body {
             font-family: $font-sedgwick;
             font-weight: bolder;
             text-transform: uppercase;
-            margin: 0 auto;
+            margin-top: -20px;
             padding: 0;
         }
         .class {
@@ -206,14 +205,12 @@ body {
 /** apply **/
 .apply {
     position: relative;
-    bottom: 0;
     background: linear-gradient(
         to bottom,
         rgba(44, 56, 64, 0.8),
         rgba(0, 0, 0, 1)
     );
     width: calc(100% - 2px);
-    height: calc(50%);
     margin: 0 auto;
     padding: 30px 0;
     text-align: center;

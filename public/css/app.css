@@ -15427,7 +15427,7 @@ body {
   height: calc(100%);
   width: calc(100% - 2px);
   margin: 0 auto;
-  padding: 40px 0 0 0;
+  padding: 20px 0 0 0;
   text-align: center;
 }
 
@@ -15464,6 +15464,8 @@ body {
   font-family: "Sedgwick Ave", cursive;
   font-weight: bolder;
   text-transform: uppercase;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .roster .roster_list .class {

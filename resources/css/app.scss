@@ -149,7 +149,7 @@ body {
     height: calc(100%);
     width: calc(100% - 2px);
     margin: 0 auto;
-    padding: 40px 0 0 0;
+    padding: 20px 0 0 0;
     text-align: center;
     .title {
         .mean_title,
@@ -183,6 +183,8 @@ body {
             font-family: $font-sedgwick;
             font-weight: bolder;
             text-transform: uppercase;
+            margin: 0 auto;
+            padding: 0;
         }
         .class {
             font-size: 14px;

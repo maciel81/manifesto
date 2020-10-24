@@ -29,13 +29,18 @@
         </div>
         <div class="top-bar-right" id="mean_nav">
           <ul class="vertical medium-horizontal menu menu-links">
-            <li><a href="#concil"><i class="fas fa-biohazard"></i> manifesto</a></li>
-            <li><a href="#roster"><i class="fas fa-users"></i> roster</a></li>
-            <li><a href="#streamers"><i class="fas fa-desktop"></i> stream</a></li>
-            <li><a href="#apply"><i class="far fa-edit"></i> apply</a></li>
+            <li><a href="#concil" class="local"><i class="fas fa-biohazard"></i> manifesto</a></li>
+            <li><a href="#roster" class="local"><i class="fas fa-users"></i> roster</a></li>
+
+            <li><a href="#apply" class="local"><i class="far fa-edit"></i> apply</a></li>
             {{-- <li><a href="#guides">guias</a></li> --}}
-            <li><a href="#contact"><i class="far fa-envelope"></i> contato</a></li>
-            <li><a href="#" class="yt"><i class="fab fa-youtube"></i> youtube</a></li>
+            <li><a href="#contact" class="local"><i class="far fa-envelope"></i> contato</a></li>
+            <li><a>|</a></li>
+            <li><a href="//www.twitch.tv/team/manifesto" class="link"><i class="fab fa-twitch"></i>
+                twitch</a></li>
+            <li><a href="//www.youtube.com/channel/UCN_ABXExDSgjy7jXp0s8teQ" class="link"><i class="fab fa-youtube"></i>
+                youtube</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -129,7 +134,7 @@
   </section>
   <!-- end roster section -->
 
-
+  {{-- 
   <!--  start streamers section  -->
   <section class="streamers" id="streamers">
     <!-- start streamers titles -->
@@ -164,7 +169,7 @@
     </div>
     <!--    End Streamers List    -->
   </section>
-  <!--  End Streamers Section  -->
+  <!--  End Streamers Section  --> --}}
 
 
   <!-- start btn : back to top -->
@@ -178,7 +183,7 @@
 
   <!-- include scripts -->
   <script src="{{ asset('js/app.js') }}"></script>
-  <script src="https://embed.twitch.tv/embed/v1.js"></script>
+  {{-- <script src="https://embed.twitch.tv/embed/v1.js"></script> --}}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
 </body>

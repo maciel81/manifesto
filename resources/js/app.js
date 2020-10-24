@@ -18,7 +18,7 @@ $(function() {
     $(document).foundation();
 
     /** mean navigation menu scroll to */
-    $("#mean_nav ul li a").on('click', function(e) {
+    $("#mean_nav ul li a.local").on('click', function(e) {
         e.preventDefault();
         scrollTo($(this).attr("href"), 900, "easeInOutCubic");
     });
@@ -42,48 +42,54 @@ $(function() {
         }
     });
   
-/** twitch.tv */
-    const width_size = 400
-    new Twitch.Embed("luquesti", {
-      channel: "luquesti",
-      width: width_size,
-      height: 300,
-      autoplay: false,
-      layout: 'video',
-      parent: 'localhost',
+    $('a.link').on('click', function (e) {
+        e.preventDefault();
+        let link = $(this).attr("href");
+        window.open(link, "_blank");
     });
-    new Twitch.Embed("zetohaysoul", {
-      channel: "zetohaysoul",
-      width: width_size,
-      height: 300,
-      autoplay: false,
-        layout: 'video',
-      parent: 'localhost',
-    });
-    new Twitch.Embed("eyimshadow", {
-      channel: "eyimshadow",
-      width: width_size,
-      height: 300,
-      autoplay: false,
-      layout: 'video',
-      parent: 'localhost',
-    });
-    new Twitch.Embed("loljenkins", {
-      channel: "loljenkins",
-      width: width_size,
-      height: 300,
-      autoplay: false,
-      layout: 'video',
-      parent: 'localhost',
-    });
-    new Twitch.Embed("paulokazan", {
-      channel: "paulokazan",
-      width: width_size,
-      height: 300,
-      autoplay: false,
-      layout: 'video',
-      parent: 'localhost',
-    });
+
+    // /** twitch.tv */
+    // const width_size = 400
+    // new Twitch.Embed("luquesti", {
+    //   channel: "luquesti",
+    //   width: width_size,
+    //   height: 300,
+    //   autoplay: false,
+    //   layout: 'video',
+    //   parent: 'localhost',
+    // });
+    // new Twitch.Embed("zetohaysoul", {
+    //   channel: "zetohaysoul",
+    //   width: width_size,
+    //   height: 300,
+    //   autoplay: false,
+    //     layout: 'video',
+    //   parent: 'localhost',
+    // });
+    // new Twitch.Embed("eyimshadow", {
+    //   channel: "eyimshadow",
+    //   width: width_size,
+    //   height: 300,
+    //   autoplay: false,
+    //   layout: 'video',
+    //   parent: 'localhost',
+    // });
+    // new Twitch.Embed("loljenkins", {
+    //   channel: "loljenkins",
+    //   width: width_size,
+    //   height: 300,
+    //   autoplay: false,
+    //   layout: 'video',
+    //   parent: 'localhost',
+    // });
+    // new Twitch.Embed("paulokazan", {
+    //   channel: "paulokazan",
+    //   width: width_size,
+    //   height: 300,
+    //   autoplay: false,
+    //   layout: 'video',
+    //   parent: 'localhost',
+    // });
     // new Twitch.Embed("paulokazan", {
     //   channel: "paulokazan",
     //   width: 400,

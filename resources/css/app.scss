@@ -183,50 +183,50 @@ html {
 }
 
 /** concil & testimonials */
-.streamers {
-    width: calc(100% - 30px);
-    height: calc(100%);
-    margin: 0 auto;
-    text-align: center;
-    background-image: linear-gradient(
-            to bottom,
-            rgba(225, 215, 166, 0.1),
-            rgba(17, 17, 17, 0.5)
-        ),
-        url("../images/hero-twitch.png");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    position: relative;
-    .title {
-        .mean_title,
-        .sub_title {
-            text-align: center;
-            color: $white;
-        }
-        .mean_title {
-            padding-top: 40px;
-            font-size: 48px;
-            font-family: $font-sedgwick;
-            font-weight: bolder;
-            text-transform: uppercase;
-            margin: 0 auto;
-        }
-        .sub_title {
-            font-size: 18px;
-            font-family: $font-raleway;
-            font-weight: lighter;
-            margin-bottom: 10px;
-        }
-    }
-    .streamers_list {
-        .streamer {
-            padding: 20px;
-            background-color: transparent;
-        }
-    }
-}
+// .streamers {
+//     width: calc(100% - 30px);
+//     height: calc(100%);
+//     margin: 0 auto;
+//     text-align: center;
+//     background-image: linear-gradient(
+//             to bottom,
+//             rgba(225, 215, 166, 0.1),
+//             rgba(17, 17, 17, 0.5)
+//         ),
+//         url("../images/hero-twitch.png");
+//     -webkit-background-size: cover;
+//     -moz-background-size: cover;
+//     -o-background-size: cover;
+//     background-size: cover;
+//     position: relative;
+//     .title {
+//         .mean_title,
+//         .sub_title {
+//             text-align: center;
+//             color: $white;
+//         }
+//         .mean_title {
+//             padding-top: 40px;
+//             font-size: 48px;
+//             font-family: $font-sedgwick;
+//             font-weight: bolder;
+//             text-transform: uppercase;
+//             margin: 0 auto;
+//         }
+//         .sub_title {
+//             font-size: 18px;
+//             font-family: $font-raleway;
+//             font-weight: lighter;
+//             margin-bottom: 10px;
+//         }
+//     }
+//     .streamers_list {
+//         .streamer {
+//             padding: 20px;
+//             background-color: transparent;
+//         }
+//     }
+// }
 
 /* fancy button */
 .btn_fancy {

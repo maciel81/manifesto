@@ -15463,43 +15463,6 @@ html {
 
 /** concil & testimonials */
 
-.streamers {
-  width: calc(100% - 30px);
-  height: calc(100%);
-  margin: 0 auto;
-  text-align: center;
-  background-image: linear-gradient(to bottom, rgba(225, 215, 166, 0.1), rgba(17, 17, 17, 0.5)), url(/images/hero-twitch.png?ca676ff2016a77e3af4d3c62b12cf5f0);
-  background-size: cover;
-  position: relative;
-}
-
-.streamers .title .mean_title,
-.streamers .title .sub_title {
-  text-align: center;
-  color: #fefefe;
-}
-
-.streamers .title .mean_title {
-  padding-top: 40px;
-  font-size: 48px;
-  font-family: "Sedgwick Ave", cursive;
-  font-weight: bolder;
-  text-transform: uppercase;
-  margin: 0 auto;
-}
-
-.streamers .title .sub_title {
-  font-size: 18px;
-  font-family: "Raleway", sans-serif;
-  font-weight: lighter;
-  margin-bottom: 10px;
-}
-
-.streamers .streamers_list .streamer {
-  padding: 20px;
-  background-color: transparent;
-}
-
 /* fancy button */
 
 .btn_fancy {

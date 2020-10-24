@@ -15548,7 +15548,7 @@ header .top-bar {
 
 header .top-bar .menu {
   background-color: transparent;
-  margin-top: 70px;
+  margin-top: calc(5%);
 }
 
 header .top-bar .menu li,

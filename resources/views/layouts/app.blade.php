@@ -144,17 +144,17 @@
     <!-- start streamers list -->
     <div class="grid-x grid-margin-x streamers_list">
       <div class="cell small-12 medium-4">
-        <iframe src="https://player.twitch.tv/?channel=luquesti&parent=127.0.0.1&muted=true&autoplay=false" height="300"
-          width="100%" frameborder="0" scrolling="no" allowfullscreen="true" autoplay="false">
-        </iframe>
-      </div>
-      <div class="cell small-12 medium-4">
-        <iframe src="https://player.twitch.tv/?channel=zetohaysoul&parent=127.0.0.1&muted=true&autoplay=false"
+        <iframe src="https://player.twitch.tv/?channel=luquesti&parent={{ env('APP_URL')}}&muted=true&autoplay=false"
           height="300" width="100%" frameborder="0" scrolling="no" allowfullscreen="true" autoplay="false">
         </iframe>
       </div>
       <div class="cell small-12 medium-4">
-        <iframe src="https://player.twitch.tv/?channel=eyimshadow&parent=127.0.0.1&muted=true&autoplay=false"
+        <iframe src="https://player.twitch.tv/?channel=zetohaysoul&parent={{ env('APP_URL')}}&muted=true&autoplay=false"
+          height="300" width="100%" frameborder="0" scrolling="no" allowfullscreen="true" autoplay="false">
+        </iframe>
+      </div>
+      <div class="cell small-12 medium-4">
+        <iframe src="https://player.twitch.tv/?channel=eyimshadow&parent={{ env('APP_URL')}}&muted=true&autoplay=false"
           height="300" width="100%" frameborder="0" scrolling="no" allowfullscreen="true">
         </iframe>
       </div>
@@ -162,18 +162,18 @@
         <hr />
       </div>
       <div class="cell small-12 medium-4">
-        <iframe src="https://player.twitch.tv/?channel=loljenkins&parent=127.0.0.1&muted=true&autoplay=false"
+        <iframe src="https://player.twitch.tv/?channel=loljenkins&parent={{ env('APP_URL')}}&muted=true&autoplay=false"
           height="300" width="100%" frameborder="0" scrolling="no" allowfullscreen="true">
         </iframe>
       </div>
       <div class="cell small-12 medium-4">
-        <iframe src="https://player.twitch.tv/?channel=paulokazan&parent=127.0.0.1&muted=true&autoplay=false"
+        <iframe src="https://player.twitch.tv/?channel=paulokazan&parent={{ env('APP_URL')}}&muted=true&autoplay=false"
           height="300" width="100%" frameborder="0" scrolling="no" allowfullscreen="true">
         </iframe>
       </div>
       <div class="cell small-12 medium-4">
-        <iframe src="https://player.twitch.tv/?channel=luquesti&parent=127.0.0.1&muted=true&autoplay=false" height="300"
-          width="100%" frameborder="0" scrolling="no" allowfullscreen="true">
+        <iframe src="https://player.twitch.tv/?channel=luquesti&parent={{ env('APP_URL')}}&muted=true&autoplay=false"
+          height="300" width="100%" frameborder="0" scrolling="no" allowfullscreen="true">
         </iframe>
       </div>
     </div>

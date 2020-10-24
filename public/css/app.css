@@ -15405,11 +15405,7 @@ body {
   margin-left: -10px;
 }
 
-.concil .testimonial-slider-container .testimonial-slide .full-width-testimonial-icon {
-  text-align: center;
-}
-
-.concil .testimonial-slider-container .testimonial-slide .full-width-testimonial-icon .quote-path {
+.concil .testimonial-slider-container .testimonial-slide .quote-path {
   fill: transparent;
   stroke: #e1d7a6;
   stroke-width: 2.5192;

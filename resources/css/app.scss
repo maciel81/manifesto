@@ -68,7 +68,6 @@ body {
         .mean_title,
         .sub_title {
             text-align: center;
-            //color: #454545;
             color: rgb(225, 215, 166);
         }
         .mean_title {
@@ -133,15 +132,12 @@ body {
             .testimonial-photo {
                 margin-left: -10px;
             }
-            .full-width-testimonial-icon {
-                text-align: center;
-                .quote-path {
-                    fill: transparent;
-                    stroke: rgb(225, 215, 166);
-                    stroke-width: 2.5192;
-                    stroke-miterlimit: 10;
-                    padding-bottom: $full-width-testimonial-vertical-padding;
-                }
+            .quote-path {
+                fill: transparent;
+                stroke: rgb(225, 215, 166);
+                stroke-width: 2.5192;
+                stroke-miterlimit: 10;
+                padding-bottom: $full-width-testimonial-vertical-padding;
             }
         }
     }

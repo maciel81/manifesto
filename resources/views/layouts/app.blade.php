@@ -144,25 +144,22 @@
     <!-- start streamers list -->
     <div class="grid-x grid-margin-x streamers_list">
       <div class="cell small-12 medium-12 large-4">
-        <div id="luquesti"></div>
+        <div class="streamer" id="luquesti"></div>
       </div>
       <div class="cell small-12 medium-12 large-4">
-        <div id="zetohaysoul"></div>
+        <div class="streamer" id="zetohaysoul"></div>
       </div>
       <div class="cell small-12 medium-12 large-4">
-        <div id="eyimshadow"></div>
-      </div>
-      <div class="cell">
-        <hr />
+        <div class="streamer" id="eyimshadow"></div>
       </div>
       <div class="cell small-12 medium-12 large-4">
-        <div id="loljenkins"></div>
+        <div class="streamer" id="loljenkins"></div>
       </div>
       <div class="cell small-12 medium-12 large-4">
-        <div id="paulokazan"></div>
+        <div class="streamer" id="paulokazan"></div>
       </div>
       <div class="cell small-12 medium-12 large-4">
-        <div id="cabidd"></div>
+        <div class="streamer" id="cabidd"></div>
       </div>
     </div>
     <!--    End Streamers List    -->

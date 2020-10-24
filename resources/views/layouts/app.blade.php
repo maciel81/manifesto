@@ -156,7 +156,7 @@
       <div class="cell small-12 medium-5 large-3 large-offset-1">
         <div class="translucent-form-overlay">
           <form>
-            <p>Ou fale conosco</p>
+            <p>É aqui mesmo</p>
             <input type="text" name="nome" placeholder="Seu nome">
             <input type="text" name="email" placeholder="Seu email">
             <textarea name="mensagem" placeholder="O que você procesa de nós?" rows="5"></textarea>

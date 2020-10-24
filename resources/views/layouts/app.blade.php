@@ -112,7 +112,7 @@
     </div> --}}
     <div class="grid-x grid-margin-x roster_list">
       <!-- start roster list -->
-      @for ($r = 0, $break=1; $r < sizeof($roster); $r++, $break++) <div class="cell small-6 medium-4 large-2">
+      @for ($r = 0, $break=1; $r < sizeof($roster); $r++, $break++) <div class="cell small-12 medium-2 large-2">
         <img src="{{ $roster[$r]['image'] }}" alt="" title="" />
         <p class="player">{{ $roster[$r]['name'] }}</p>
         <p class="class">{{ $roster[$r]['class'] }}</p>
@@ -143,38 +143,26 @@
 
     <!-- start streamers list -->
     <div class="grid-x grid-margin-x streamers_list">
-      <div class="cell small-12 medium-4">
-        <iframe src="https://player.twitch.tv/?channel=luquesti&parent={{ env('APP_URL')}}&muted=true&autoplay=false"
-          height="300" width="100%" frameborder="0" scrolling="no" allowfullscreen="true" autoplay="false">
-        </iframe>
+      <div class="cell small-12 medium-12 large-4">
+        <div id="luquesti"></div>
       </div>
-      <div class="cell small-12 medium-4">
-        <iframe src="https://player.twitch.tv/?channel=zetohaysoul&parent={{ env('APP_URL')}}&muted=true&autoplay=false"
-          height="300" width="100%" frameborder="0" scrolling="no" allowfullscreen="true" autoplay="false">
-        </iframe>
+      <div class="cell small-12 medium-12 large-4">
+        <div id="zetohaysoul"></div>
       </div>
-      <div class="cell small-12 medium-4">
-        <iframe src="https://player.twitch.tv/?channel=eyimshadow&parent={{ env('APP_URL')}}&muted=true&autoplay=false"
-          height="300" width="100%" frameborder="0" scrolling="no" allowfullscreen="true">
-        </iframe>
+      <div class="cell small-12 medium-12 large-4">
+        <div id="eyimshadow"></div>
       </div>
       <div class="cell">
         <hr />
       </div>
-      <div class="cell small-12 medium-4">
-        <iframe src="https://player.twitch.tv/?channel=loljenkins&parent={{ env('APP_URL')}}&muted=true&autoplay=false"
-          height="300" width="100%" frameborder="0" scrolling="no" allowfullscreen="true">
-        </iframe>
+      <div class="cell small-12 medium-12 large-4">
+        <div id="loljenkins"></div>
       </div>
-      <div class="cell small-12 medium-4">
-        <iframe src="https://player.twitch.tv/?channel=paulokazan&parent={{ env('APP_URL')}}&muted=true&autoplay=false"
-          height="300" width="100%" frameborder="0" scrolling="no" allowfullscreen="true">
-        </iframe>
+      <div class="cell small-12 medium-12 large-4">
+        <div id="paulokazan"></div>
       </div>
-      <div class="cell small-12 medium-4">
-        <iframe src="https://player.twitch.tv/?channel=luquesti&parent={{ env('APP_URL')}}&muted=true&autoplay=false"
-          height="300" width="100%" frameborder="0" scrolling="no" allowfullscreen="true">
-        </iframe>
+      <div class="cell small-12 medium-12 large-4">
+        <div id="cabidd"></div>
       </div>
     </div>
     <!--    End Streamers List    -->
@@ -193,6 +181,7 @@
 
   <!-- include scripts -->
   <script src="{{ asset('js/app.js') }}"></script>
+  <script src="https://embed.twitch.tv/embed/v1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
 </body>

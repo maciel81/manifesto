@@ -42,4 +42,49 @@ $(function() {
         }
     });
   
+/** twitch.tv */
+    new Twitch.Embed("luquesti", {
+      channel: "luquesti",
+      width: 400,
+      height: 300,
+      autoplay: false,
+      layout: 'video'
+    });
+    new Twitch.Embed("zetohaysoul", {
+      channel: "zetohaysoul",
+      width: 400,
+      height: 300,
+      autoplay: false,
+      layout: 'video'
+    });
+    new Twitch.Embed("eyimshadow", {
+      channel: "eyimshadow",
+      width: 400,
+      height: 300,
+      autoplay: false,
+      layout: 'video'
+    });
+    new Twitch.Embed("loljenkins", {
+      channel: "loljenkins",
+      width: 400,
+      height: 300,
+      autoplay: false,
+      layout: 'video'
+    });
+    new Twitch.Embed("paulokazan", {
+      channel: "paulokazan",
+      width: 400,
+      height: 300,
+      autoplay: false,
+      layout: 'video'
+    });
+    // new Twitch.Embed("paulokazan", {
+    //   channel: "paulokazan",
+    //   width: 400,
+    //   height: 300,
+    //   autoplay: false,
+    //   layout: 'video'
+    // });
+    // 
+
 });

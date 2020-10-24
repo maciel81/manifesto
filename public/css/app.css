@@ -15304,8 +15304,8 @@ body {
 /**   Hero   */
 
 .hero {
-  width: calc(100% - 2px);
-  height: calc(100%);
+  min-width: calc(100%);
+  min-height: calc(100%);
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(to bottom, rgba(225, 215, 166, 0.1), rgba(17, 17, 17, 0.5)), url(/images/hero-manifesto.png?4066d0205e20510ec5e79843152cf259);
   background-size: cover;
@@ -15315,18 +15315,19 @@ body {
 /** concil & testimonials */
 
 .concil {
-  width: calc(100% - 2px);
+  min-width: calc(100%);
   min-height: calc(100%);
   margin: 0 auto;
   text-align: center;
-  background: linear-gradient(to bottom, rgba(17, 17, 17, 0.5) rgba(225, 215, 166, 0.8));
+  background: linear-gradient(to bottom, rgba(7, 7, 7, 0.9), rgba(17, 17, 17, 0.75)), url(/images/hero-holstee.jpg?05fe70a759325514e2e39d50b7073576) no-repeat 50% 50%;
+  background-size: cover;
   position: relative;
 }
 
 .concil .title .mean_title,
 .concil .title .sub_title {
   text-align: center;
-  color: #454545;
+  color: #e1d7a6;
 }
 
 .concil .title .mean_title {
@@ -15350,15 +15351,9 @@ body {
   margin: 0 auto;
 }
 
-.concil .testimonial-slider-container .orbit-previous {
-  color: #0a0a0a;
-  vertical-align: bottom;
-  font-size: 40px;
-}
-
+.concil .testimonial-slider-container .orbit-previous,
 .concil .testimonial-slider-container .orbit-next {
-  color: #0a0a0a;
-  vertical-align: middle;
+  color: #e1d7a6;
   font-size: 40px;
 }
 
@@ -15384,27 +15379,30 @@ body {
   text-align: center;
   font-style: italic;
   font-size: 36px;
+  color: #e1d7a6;
 }
 
 .concil .testimonial-slider-container .testimonial-slide .testimonial-author {
   text-align: right;
   font-style: italic;
   font-size: 14px;
+  color: #fefefe;
 }
 
 .concil .testimonial-slider-container .testimonial-slide .testimonial-author .author {
-  color: #3e1c00;
-  font-weight: bolder;
+  color: rgba(225, 215, 166, 0.8);
+  font-weight: lighter;
   font-size: 21px;
 }
 
 .concil .testimonial-slider-container .testimonial-slide .testimonial-text {
   text-align: justify;
   font-family: "Raleway", sans-serif;
+  color: #fefefe;
 }
 
 .concil .testimonial-slider-container .testimonial-slide .testimonial-photo {
-  max-width: 300px;
+  margin-left: -10px;
 }
 
 .concil .testimonial-slider-container .testimonial-slide .full-width-testimonial-icon {
@@ -15413,7 +15411,7 @@ body {
 
 .concil .testimonial-slider-container .testimonial-slide .full-width-testimonial-icon .quote-path {
   fill: transparent;
-  stroke: #ffae00;
+  stroke: #e1d7a6;
   stroke-width: 2.5192;
   stroke-miterlimit: 10;
   padding-bottom: 2rem;
@@ -15422,10 +15420,10 @@ body {
 /** roster */
 
 .roster {
+  min-height: calc(100%);
+  min-width: calc(100% - 2px);
   background-image: url(/images/hachure.png?6a6b7109392f99ae5f4710faf91a6fd3);
   background-repeat: repeat;
-  min-height: calc(100%);
-  width: calc(100% - 2px);
   margin: 0 auto;
   padding: 10px 0;
   text-align: center;
@@ -15483,9 +15481,9 @@ body {
 /** quote **/
 
 .quote {
-  display: table;
-  width: 100%;
+  min-width: calc(100%);
   min-height: calc(50%);
+  display: table;
   background: url(/images/hero-quote.jpg?ca379af9102a2c1ccd2f1d20b7986013) no-repeat 50% 50%;
   background-size: cover;
   text-align: center;

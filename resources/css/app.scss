@@ -20,11 +20,16 @@ $font-sedgwick: "Sedgwick Ave", cursive;
 // App Style
 body,
 html {
-    height: 100%;
+    height: calc(100%);
+}
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 /**   Hero   */
 .hero {
+    width: calc(100% - 2px);
     height: calc(100%);
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: linear-gradient(
@@ -42,7 +47,9 @@ html {
 
 /** concil & testimonials */
 .concil {
-    width: calc(100% - 30px);
+    $full-width-testimonial-quote-color: $warning-color;
+    $full-width-testimonial-vertical-padding: 2rem;
+    width: calc(100% - 2px);
     height: calc(100%);
     margin: 0 auto;
     text-align: center;
@@ -71,7 +78,6 @@ html {
             margin-bottom: 100px;
         }
     }
-
     .testimonial-slider-container {
         width: calc(75%);
         height: calc(100%);
@@ -84,6 +90,7 @@ html {
         .orbit-next {
             color: $black;
             vertical-align: middle;
+            font-size: 40px;
         }
         .testimonial-slide {
             display: flex;
@@ -100,10 +107,9 @@ html {
                 font-family: $font-sedgwick;
             }
             .testimonial-title {
-                text-align: justify;
+                text-align: center;
                 font-style: italic;
-                font-size: 24px;
-                margin-top: 3rem;
+                font-size: 36px;
             }
             .testimonial-author {
                 text-align: right;
@@ -122,6 +128,16 @@ html {
             .testimonial-photo {
                 max-width: 300px;
             }
+            .full-width-testimonial-icon {
+                text-align: center;
+                .quote-path {
+                    fill: transparent;
+                    stroke: $full-width-testimonial-quote-color;
+                    stroke-width: 2.5192;
+                    stroke-miterlimit: 10;
+                    padding-bottom: $full-width-testimonial-vertical-padding;
+                }
+            }
         }
     }
 }
@@ -131,7 +147,7 @@ html {
     background-image: url("../images/hachure.png");
     background-repeat: repeat;
     height: calc(100%);
-    width: calc(100% - 30px);
+    width: calc(100% - 2px);
     margin: 0 auto;
     // padding: 40px 0;
     text-align: center;
@@ -182,51 +198,79 @@ html {
     }
 }
 
-/** concil & testimonials */
-// .streamers {
-//     width: calc(100% - 30px);
-//     height: calc(100%);
-//     margin: 0 auto;
-//     text-align: center;
-//     background-image: linear-gradient(
-//             to bottom,
-//             rgba(225, 215, 166, 0.1),
-//             rgba(17, 17, 17, 0.5)
-//         ),
-//         url("../images/hero-twitch.png");
-//     -webkit-background-size: cover;
-//     -moz-background-size: cover;
-//     -o-background-size: cover;
-//     background-size: cover;
-//     position: relative;
-//     .title {
-//         .mean_title,
-//         .sub_title {
-//             text-align: center;
-//             color: $white;
-//         }
-//         .mean_title {
-//             padding-top: 40px;
-//             font-size: 48px;
-//             font-family: $font-sedgwick;
-//             font-weight: bolder;
-//             text-transform: uppercase;
-//             margin: 0 auto;
-//         }
-//         .sub_title {
-//             font-size: 18px;
-//             font-family: $font-raleway;
-//             font-weight: lighter;
-//             margin-bottom: 10px;
-//         }
-//     }
-//     .streamers_list {
-//         .streamer {
-//             padding: 20px;
-//             background-color: transparent;
-//         }
-//     }
-// }
+/** apply **/
+.apply {
+    // background: linear-gradient(
+    //         to bottom,
+    //         rgba(229, 223, 247, 0.7),
+    //         rgba(0, 0, 0, 1)
+    //     ),
+    //     url("../images/hero.jpg") no-repeat 50% 50%;
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    // background-size: cover;
+    //background: #2c3840 !important;
+    background: linear-gradient(
+        to bottom,
+        rgba(44, 56, 64, 0.8),
+        rgba(0, 0, 0, 1)
+    );
+    width: calc(100% - 2px);
+    height: calc(40%);
+    margin: 0 auto;
+    padding: 30px 0;
+    text-align: center;
+    .title {
+        .mean_title,
+        .sub_title {
+            text-align: center;
+            color: $white;
+        }
+        .mean_title {
+            font-size: 48px;
+            font-family: $font-sedgwick;
+            font-weight: bolder;
+            text-transform: uppercase;
+            padding-top: 40px;
+        }
+        .sub_title {
+            font-size: 18px;
+            font-family: $font-raleway;
+            font-weight: lighter;
+        }
+    }
+    .assign {
+        opacity: 1;
+        color: $black;
+        font-size: 24px;
+        font-weight: lighter;
+        font-family: $font-sedgwick;
+        padding: 40px;
+        color: $white;
+        a {
+            color: $white;
+            border: 1px dashed $warning-color;
+            padding: 5px;
+            font-weight: bolder;
+            color: $warning-color;
+        }
+    }
+    .translucent-form-overlay {
+        color: $white;
+        input,
+        textarea {
+            color: $dark-gray;
+            ::placeholder {
+                color: $dark-gray;
+            }
+        }
+        p {
+            font-family: $font-sedgwick;
+            font-size: 16px;
+        }
+    }
+}
 
 /* fancy button */
 .btn_fancy {
@@ -251,7 +295,6 @@ html {
     :focus {
         color: #454545;
     }
-
     .border_layer {
         position: absolute;
         top: 0;
@@ -269,7 +312,7 @@ html {
         left: -4px;
         width: 100%;
         height: 100%;
-        background: #fbdd90;
+        background: $warning-color;
         border-radius: 2px;
         -webkit-transition: all 0.2s ease-out;
         -o-transition: all 0.2s ease-out;
@@ -322,6 +365,7 @@ header {
             background-color: transparent;
             margin-top: calc(5%);
             li,
+            span,
             a {
                 font-family: $font-raleway;
                 text-transform: uppercase;

@@ -29,18 +29,14 @@
         </div>
         <div class="top-bar-right" id="mean_nav">
           <ul class="vertical medium-horizontal menu menu-links">
-            <li><a href="#concil" class="local"><i class="fas fa-biohazard"></i> manifesto</a></li>
-            <li><a href="#roster" class="local"><i class="fas fa-users"></i> roster</a></li>
-
-            <li><a href="#apply" class="local"><i class="far fa-edit"></i> apply</a></li>
-            {{-- <li><a href="#guides">guias</a></li> --}}
-            <li><a href="#contact" class="local"><i class="far fa-envelope"></i> contato</a></li>
+            <li><a href="#concil" class="scroll"><i class="fas fa-biohazard"></i> manifesto</a></li>
+            <li><a href="#roster" class="scroll"><i class="fas fa-users"></i> roster</a></li>
+            <li><a href="#apply" class="scroll"><i class="far fa-edit"></i> apply</a></li>
             <li><a>|</a></li>
-            <li><a href="//www.twitch.tv/team/manifesto" class="link"><i class="fab fa-twitch"></i>
-                twitch</a></li>
-            <li><a href="//www.youtube.com/channel/UCN_ABXExDSgjy7jXp0s8teQ" class="link"><i class="fab fa-youtube"></i>
-                youtube</a>
+            <li><a href="https://www.twitch.tv/team/manifesto" target="_blank"><i class="fab fa-twitch"></i> twitch</a>
             </li>
+            <li><a href="https://www.youtube.com/channel/UCN_ABXExDSgjy7jXp0s8teQ" target="_blank"><i
+                  class="fab fa-youtube"></i> youtube</a></li>
           </ul>
         </div>
       </nav>
@@ -65,7 +61,7 @@
       <ul class="orbit-container">
         <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span><i
             class="fas fa-angle-left"></i></button>
-        <button class="orbit-next"><span class="show-for-sr">Next Slide</span><i
+        <button class="orbit-next"><span class="show-for-sr">Next Slide </span><i
             class="fas fa-angle-right"></i></button>
 
         <!-- content slide -->
@@ -74,8 +70,16 @@
           <div class="testimonial-slide">
             <div class="grid-x grid-margin-x grid-padding-x">
               <div class="cell small-12 medium-9">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="41px" height="34px"
+                  viewBox="-235 240 41 34" style="enable-background:new -235 240 41 34;" xml:space="preserve">
+                  <path class="quote-path" d="M-231.3,260.4c0-5,1.3-8.8,3.7-11.7c2.4-2.8,6-4.6,10.5-5.5v5c-3.5,1-6,2.8-7.1,5.5c-0.7,1.4-0.9,2.8-0.8,4
+                            h8.1v12.8h-14.4V260.4z" />
+                  <path class="quote-path" d="M-212,260.4c0-5,1.3-8.8,3.7-11.7c2.4-2.8,6-4.6,10.5-5.5v5c-3.5,1-6,2.8-7.1,5.5c-0.7,1.4-0.9,2.8-0.8,4h8.1
+                            v12.8H-212V260.4z" />
+                </svg>
                 <p class="testimonial-title">
-                  "{{ $v['title'] }}"
+                  {{ $v['title'] }}
                 </p>
                 <p class="testimonial-author">by <span class="author">{{ $k }}</span></p>
                 <br />
@@ -134,43 +138,37 @@
   </section>
   <!-- end roster section -->
 
-  {{-- 
-  <!--  start streamers section  -->
-  <section class="streamers" id="streamers">
-    <!-- start streamers titles -->
-    <div class="title">
-      <p class="mean_title">nossos streamers</p>
-      <p class="sub_title">
-        &nbsp;
-      </p>
-    </div>
-    <!-- end streamers titles -->
 
-    <!-- start streamers list -->
-    <div class="grid-x grid-margin-x streamers_list">
-      <div class="cell small-12 medium-12 large-4">
-        <div class="streamer" id="luquesti"></div>
+  <!-- start contact section -->
+  <section class="apply" id="apply">
+    {{-- <div class="title">
+      <p class="mean_title">Para que <span class="strong">todos</span> possam ser ouvidos.</p>
+      <p class="sub_title">&nbsp;</p>
+    </div> --}}
+    <div class="grid-x grid-margin-x">
+      <div class="cell large-7">
+        <p class="assign">Se você deseja fazer parte do nosso grupo (espero que o zeto faça um texto melhor, que
+          cative
+          alguém) <a href="#">clique aqui</a> e faça parte do nosso time, ou então nos deixe a sua
+          mensagem de apoio
+          aqui ao lado.</p>
       </div>
-      <div class="cell small-12 medium-12 large-4">
-        <div class="streamer" id="zetohaysoul"></div>
-      </div>
-      <div class="cell small-12 medium-12 large-4">
-        <div class="streamer" id="eyimshadow"></div>
-      </div>
-      <div class="cell small-12 medium-12 large-4">
-        <div class="streamer" id="loljenkins"></div>
-      </div>
-      <div class="cell small-12 medium-12 large-4">
-        <div class="streamer" id="paulokazan"></div>
-      </div>
-      <div class="cell small-12 medium-12 large-4">
-        <div class="streamer" id="cabidd"></div>
+      <div class="cell large-2 large-offset-2">
+        <div class="translucent-form-overlay">
+          <form>
+            <p>Ou fale conosco</p>
+            <input type="text" name="nome" placeholder="Seu nome">
+            <input type="text" name="email" placeholder="Seu email">
+            <textarea name="mensagem" placeholder="O que você procesa de nós?" rows="5"></textarea>
+            <button type="button" class="primary button expanded warning hollow">
+              É só clicar para enviar
+            </button>
+          </form>
+        </div>
       </div>
     </div>
-    <!--    End Streamers List    -->
   </section>
-  <!--  End Streamers Section  --> --}}
-
+  <!-- end apply section -->
 
   <!-- start btn : back to top -->
   <a href="#" class="btn_fancy" id="back_top">

@@ -15293,12 +15293,18 @@ readers do not read off random characters that represent icons */
 
 body,
 html {
-  height: 100%;
+  height: calc(100%);
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 /**   Hero   */
 
 .hero {
+  width: calc(100% - 2px);
   height: calc(100%);
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(to bottom, rgba(225, 215, 166, 0.1), rgba(17, 17, 17, 0.5)), url(/images/hero-manifesto.png?4066d0205e20510ec5e79843152cf259);
@@ -15309,7 +15315,7 @@ html {
 /** concil & testimonials */
 
 .concil {
-  width: calc(100% - 30px);
+  width: calc(100% - 2px);
   height: calc(100%);
   margin: 0 auto;
   text-align: center;
@@ -15353,6 +15359,7 @@ html {
 .concil .testimonial-slider-container .orbit-next {
   color: #0a0a0a;
   vertical-align: middle;
+  font-size: 40px;
 }
 
 .concil .testimonial-slider-container .testimonial-slide {
@@ -15374,10 +15381,9 @@ html {
 }
 
 .concil .testimonial-slider-container .testimonial-slide .testimonial-title {
-  text-align: justify;
+  text-align: center;
   font-style: italic;
-  font-size: 24px;
-  margin-top: 3rem;
+  font-size: 36px;
 }
 
 .concil .testimonial-slider-container .testimonial-slide .testimonial-author {
@@ -15401,13 +15407,25 @@ html {
   max-width: 300px;
 }
 
+.concil .testimonial-slider-container .testimonial-slide .full-width-testimonial-icon {
+  text-align: center;
+}
+
+.concil .testimonial-slider-container .testimonial-slide .full-width-testimonial-icon .quote-path {
+  fill: transparent;
+  stroke: #ffae00;
+  stroke-width: 2.5192;
+  stroke-miterlimit: 10;
+  padding-bottom: 2rem;
+}
+
 /** roster */
 
 .roster {
   background-image: url(/images/hachure.png?6a6b7109392f99ae5f4710faf91a6fd3);
   background-repeat: repeat;
   height: calc(100%);
-  width: calc(100% - 30px);
+  width: calc(100% - 2px);
   margin: 0 auto;
   text-align: center;
 }
@@ -15461,7 +15479,81 @@ html {
   width: 24px;
 }
 
-/** concil & testimonials */
+/** apply **/
+
+.apply {
+  background: linear-gradient(to bottom, rgba(44, 56, 64, 0.8), black);
+  width: calc(100% - 2px);
+  height: calc(40%);
+  margin: 0 auto;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.apply .title .mean_title,
+.apply .title .sub_title {
+  text-align: center;
+  color: #fefefe;
+}
+
+.apply .title .mean_title {
+  font-size: 48px;
+  font-family: "Sedgwick Ave", cursive;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding-top: 40px;
+}
+
+.apply .title .sub_title {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+}
+
+.apply .assign {
+  opacity: 1;
+  color: #0a0a0a;
+  font-size: 24px;
+  font-weight: lighter;
+  font-family: "Sedgwick Ave", cursive;
+  padding: 40px;
+  color: #fefefe;
+}
+
+.apply .assign a {
+  color: #fefefe;
+  border: 1px dashed #ffae00;
+  padding: 5px;
+  font-weight: bolder;
+  color: #ffae00;
+}
+
+.apply .translucent-form-overlay {
+  color: #fefefe;
+}
+
+.apply .translucent-form-overlay input,
+.apply .translucent-form-overlay textarea {
+  color: #8a8a8a;
+}
+
+.apply .translucent-form-overlay input ::-moz-placeholder, .apply .translucent-form-overlay textarea ::-moz-placeholder {
+  color: #8a8a8a;
+}
+
+.apply .translucent-form-overlay input :-ms-input-placeholder, .apply .translucent-form-overlay textarea :-ms-input-placeholder {
+  color: #8a8a8a;
+}
+
+.apply .translucent-form-overlay input ::placeholder,
+.apply .translucent-form-overlay textarea ::placeholder {
+  color: #8a8a8a;
+}
+
+.apply .translucent-form-overlay p {
+  font-family: "Sedgwick Ave", cursive;
+  font-size: 16px;
+}
 
 /* fancy button */
 
@@ -15505,7 +15597,7 @@ html {
   left: -4px;
   width: 100%;
   height: 100%;
-  background: #fbdd90;
+  background: #ffae00;
   border-radius: 2px;
   transition: all 0.2s ease-out;
 }
@@ -15554,6 +15646,7 @@ header .top-bar .menu {
 }
 
 header .top-bar .menu li,
+header .top-bar .menu span,
 header .top-bar .menu a {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
@@ -15563,6 +15656,7 @@ header .top-bar .menu a {
 }
 
 header .top-bar .menu li :hover,
+header .top-bar .menu span :hover,
 header .top-bar .menu a :hover {
   text-shadow: 1px 1px #494949;
 }

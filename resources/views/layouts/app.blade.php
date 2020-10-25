@@ -21,7 +21,7 @@
   <!-- start hero section -->
   <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
     <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
-    <div class="title-bar-title">Menu</div>
+    <div class="title-bar-title">Guilda Manifesto - World of Warcraft</div>
   </div>
   <nav class="top-bar mean_nav" id="responsive-menu">
     <div class="top-bar-left hide-for-medium">

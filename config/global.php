@@ -16,7 +16,7 @@ return [
     'Brewhorne' => [
       'photo' => 'dummy-photo-1',
       'title' => 'Eu sou uma almôndega.',
-      'text' => 'Previamente um Guardian Druid, Kazan se desafia com outros tanks. Nada que ele não seja capaz de dominar, já que quando o assunto é fundação, estrutura e defesa ninguém chega aos pés de Kazan.',
+      'text' => 'Previamente um Guardian Druid, Brewhorne se desafia com outros tanks. Nada que ele não seja capaz de dominar, já que quando o assunto é fundação, estrutura e defesa ninguém chega aos pés de Kazan.',
     ],
     'Flakharke' => [
       'photo' => 'dummy-photo-3',
@@ -26,7 +26,7 @@ return [
     'Adëpt ' => [
       'photo' => 'dummy-photo-1',
       'title' => 'Alimenta/Não alimenta.',
-      'text' => 'Voz ativa desde a progressão do Shad\'har em Ny\'alotha, Chëddar desde então segue dando calls ao longo das lutas. Faça chuva ou faça sol, esteja bem ou mal, Chëddar estará lá para te guiar.',
+      'text' => 'Voz ativa desde a progressão do Shad\'har em Ny\'alotha, Chëddar desde então segue dando calls ao longo das lutas. Faça chuva ou faça sol, esteja bem ou mal, Adëpt estará lá para te guiar.',
     ],
     'Taulrak' => [
       'photo' => 'dummy-photo-3',
@@ -36,17 +36,17 @@ return [
     'Fusle' => [
       'photo' => 'dummy-photo-1',
       'title' => 'CHAAAAAAAAAARGE!',
-      'text' => 'Como um verdadeiro ex-warrior, Luquesti ainda se encontra levando um grande berro como seu brado de batalha rumo ao combate. Das shoulders do Garrosh às shoulders do Xavius, Luquesti é incapaz de desistir.',
+      'text' => 'Como um verdadeiro ex-warrior, Fusle ainda se encontra levando um grande berro como seu brado de batalha rumo ao combate. Das shoulders do Garrosh às shoulders do Xavius, Fusle é incapaz de desistir.',
     ],
     'Jnkx' => [
       'photo' => 'dummy-photo-3',
       'title' => 'Sim, como soube?',
-      'text' => 'Se há palavras para descrever Vz, estas seriam versatilidade de flexibilidade. Vz é ótimo em preencher as necessidades do grupo em relação a qualquer coisa quando se trata de manter as coisas funcionando.',
+      'text' => 'Se há palavras para descrever Jnkx, estas seriam versatilidade de flexibilidade. Vz é ótimo em preencher as necessidades do grupo em relação a qualquer coisa quando se trata de manter as coisas funcionando.',
     ],
     'Ajuda' => [
       'photo' => 'dummy-photo-1',
       'title' => 'Toque da Morte!',
-      'text' => 'Do grupo perdido dos monks windwalkers, a perseverança e a paciência de Panda são incomparáveis quando se trata de eliminar seus inimigos sem nada nas mãos enquanto suas armas ficam em suas costas.',
+      'text' => 'Do grupo perdido dos monks windwalkers, a perseverança e a paciência de Ajuda são incomparáveis quando se trata de eliminar seus inimigos sem nada nas mãos enquanto suas armas ficam em suas costas.',
     ],
     'Soulpact' => [
       'photo' => 'dummy-photo-3',

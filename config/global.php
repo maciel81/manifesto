@@ -13,10 +13,10 @@ return [
       'title' => 'O Poderoso Kbid',
       'text' => 'Apesar de provavelmente ser um dos melhores players dentro da Manifesto, Cabbid é um poço de humildade e por isso é capaz de trazer um olhar essencialmente puro e perspicaz ao Conselho.',
     ],
-    'Brewhorne' => [
-      'photo' => 'dummy-photo-1',
+    'Brewhorn' => [
+      'photo' => 'dummy-photo-2',
       'title' => 'Eu sou uma almôndega.',
-      'text' => 'Previamente um Guardian Druid, Brewhorne se desafia com outros tanks. Nada que ele não seja capaz de dominar, já que quando o assunto é fundação, estrutura e defesa ninguém chega aos pés de Brewhorne.',
+      'text' => 'Previamente um Guardian Druid, Brewhorn se desafia com outros tanks. Nada que ele não seja capaz de dominar, já que quando o assunto é fundação, estrutura e defesa ninguém chega aos pés de Brewhorn.',
     ],
     'Flakharke' => [
       'photo' => 'dummy-photo-3',

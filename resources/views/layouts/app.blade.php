@@ -121,7 +121,7 @@
     </div> --}}
     <div class="grid-x grid-margin-x roster_list">
       <!-- start roster list -->
-      @for ($r = 0, $break=1; $r < sizeof($roster); $r++, $break++) <div class="cell small-12 medium-2 large-2">
+      @for ($r = 0, $break=1; $r < sizeof($roster); $r++, $break++) <div class="cell small-12 medium-3 large-3">
         <img src="{{ $roster[$r]['image'] }}" alt="" title="" class="icon" />
         <p class="player">{{ $roster[$r]['name'] }}</p>
         <p class="class">{{ $roster[$r]['class'] }}</p>

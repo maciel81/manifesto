@@ -147,8 +147,8 @@ body {
 
 /** roster */
 .roster {
+    min-width: calc(100%);
     min-height: calc(100%);
-    min-width: calc(100% - 2px);
     background-image: url("../images/hachure.png");
     background-repeat: repeat;
     margin: 0 auto;
@@ -183,7 +183,7 @@ body {
             margin: 0 auto;
         }
         .player {
-            font-size: 18px;
+            font-size: 24px;
             font-family: $font-sedgwick;
             font-weight: bolder;
             text-transform: uppercase;
@@ -191,7 +191,7 @@ body {
             padding: 0;
         }
         .class {
-            font-size: 14px;
+            font-size: 18px;
             font-family: $font-sedgwick;
             font-weight: lighter;
         }
@@ -250,16 +250,40 @@ body {
     }
 }
 
+/** header */
+header {
+    .top-bar {
+        background-color: transparent;
+        padding: 0 20px;
+        .menu {
+            background-color: transparent;
+            margin-top: calc(5%);
+            li,
+            span,
+            a {
+                font-family: $font-raleway;
+                text-transform: uppercase;
+                font-size: 14px;
+                color: #3e1c00;
+                font-weight: bold;
+                :hover {
+                    text-shadow: 1px 1px #494949;
+                }
+            }
+        }
+    }
+}
+
 /** apply **/
 footer {
+    width: calc(100%);
+    min-height: calc(50%);
     position: relative;
     background: linear-gradient(
         to bottom,
         rgba(44, 56, 64, 0.8),
         rgba(0, 0, 0, 1)
     );
-    width: calc(100% - 2px);
-    min-height: calc(50%);
     margin: 0 auto;
     padding-top: 15px;
     text-align: center;
@@ -394,30 +418,6 @@ footer {
             -ms-transform: translate(-1px, 1px);
             -o-transform: translate(-1px, 1px);
             transform: translate(-1px, 1px);
-        }
-    }
-}
-
-/** header */
-header {
-    .top-bar {
-        background-color: transparent;
-        padding: 0 20px;
-        .menu {
-            background-color: transparent;
-            margin-top: calc(5%);
-            li,
-            span,
-            a {
-                font-family: $font-raleway;
-                text-transform: uppercase;
-                font-size: 14px;
-                color: #3e1c00;
-                font-weight: bold;
-                :hover {
-                    text-shadow: 1px 1px #494949;
-                }
-            }
         }
     }
 }

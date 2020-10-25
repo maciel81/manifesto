@@ -23,8 +23,8 @@
     <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
     <div class="title-bar-title">Menu</div>
   </div>
-  <nav class="top-bar hide-for-medium" id="responsive-menu">
-    <div class="top-bar-left">
+  <nav class="top-bar mean_nav" id="responsive-menu">
+    <div class="top-bar-left hide-for-medium">
       <ul class="vertical menu">
         <li><a href="#concil" class="scroll"><i class="fas fa-biohazard"></i> manifesto</a></li>
         <li><a href="#roster" class="scroll"><i class="fas fa-users"></i> roster</a></li>
@@ -40,7 +40,7 @@
 
   <section class="hero">
     <header>
-      <nav class="top-bar show-for-medium">
+      <nav class="top-bar show-for-medium mean_nav">
         <div class="top-bar-right">
           <ul class="horizontal menu">
             <li><a href="#concil" class="scroll"><i class="fas fa-biohazard"></i> manifesto</a></li>
@@ -55,6 +55,9 @@
           </ul>
         </div>
       </nav>
+      <div class="small-hero hide-for-medium">
+        <img src="{{ asset('images/hero-manifesto-small.png') }}" />
+      </div>
     </header>
   </section>
   <!-- end hero section -->
@@ -84,7 +87,7 @@
           <li class="orbit-slide">
             <div class="testimonial-slide">
               <div class="grid-x grid-margin-x">
-                <div class="cell small-12 medium-8">
+                <div class="cell small-12 medium-9">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="41px" height="34px"
                     viewBox="-235 240 41 34" style="enable-background:new -235 240 41 34;" xml:space="preserve">
@@ -100,7 +103,7 @@
                   <br />
                   <p class="testimonial-text">{{ $v['text'] }}</p>
                 </div>
-                <div class="cell small-6 medium-4 align-self-middle testimonial-photo">
+                <div class="cell small-6 medium-3 align-self-middle testimonial-photo">
                   <img src="{{ asset("images/{$v['photo']}.jpg") }}">
                 </div>
               </div>

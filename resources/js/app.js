@@ -17,7 +17,7 @@ $(document).foundation();
 $(function() {
 
     /** mean navigation menu scroll to */
-    $("#mean_nav ul li a.scroll").on('click', function(e) {
+    $(".mean_nav ul li a").on('click', function(e) {
         e.preventDefault();
         scrollTo($(this).attr("href"), 900, "easeInOutCubic");
     });
@@ -34,7 +34,7 @@ $(function() {
     }
   
     $(window).on("scroll", function () {
-        if ($(this).scrollTop() > 649) {
+        if ($(this).scrollTop() > 549) {
             back_top.stop().animate({ opacity: 1 }, 250);
         } else {
             back_top.stop().animate({ opacity: 0 }, 250);

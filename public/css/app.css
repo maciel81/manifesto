@@ -15318,10 +15318,51 @@ body {
 .hero {
   min-width: calc(100%);
   min-height: calc(100%);
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(to bottom, rgba(225, 215, 166, 0.1), rgba(17, 17, 17, 0.5)), url(/images/hero-manifesto.png?4066d0205e20510ec5e79843152cf259);
-  background-size: cover;
-  position: relative;
+}
+
+@media (max-width: 639px) {
+  .top-bar {
+    background-color: #111111;
+  }
+
+  .top-bar ul {
+    background-color: #111111;
+  }
+
+  .top-bar ul li a {
+    color: #fefefe;
+  }
+
+  .hero {
+    background-color: #111111;
+  }
+
+  .hero img {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 639px) {
+  .hero {
+    background-color: #111111;
+  }
+
+  .hero img {
+    margin: auto;
+  }
+
+  .hero .top-bar .top-bar ul {
+    background-color: #0a0a0a;
+  }
+}
+
+@media (min-width: 640px) {
+  .hero {
+    background-image: linear-gradient(to bottom, rgba(225, 215, 166, 0.1), rgba(17, 17, 17, 0.5)), url(/images/hero-manifesto.png?4066d0205e20510ec5e79843152cf259);
+    background-size: cover;
+    position: relative;
+  }
 }
 
 /** concil & testimonials */
@@ -15362,6 +15403,10 @@ body {
   margin: 0 10px;
 }
 
+.concil .testimonial-slider-container .orbit-bullets {
+  margin: 1rem;
+}
+
 .concil .testimonial-slider-container .orbit-previous,
 .concil .testimonial-slider-container .orbit-next {
   color: #e1d7a6;
@@ -15371,13 +15416,7 @@ body {
 .concil .testimonial-slider-container .testimonial-slide {
   min-height: 350px;
   border: 1px dashed rgba(225, 215, 166, 0.8);
-  padding: 40px;
-}
-
-.concil .testimonial-slider-container .testimonial-slide .testimonial-title,
-.concil .testimonial-slider-container .testimonial-slide .testimonial-author,
-.concil .testimonial-slider-container .testimonial-slide .testimonial-text {
-  padding: 0 1rem;
+  padding: 30px;
 }
 
 .concil .testimonial-slider-container .testimonial-slide .testimonial-title,
@@ -15413,7 +15452,7 @@ body {
 
 .concil .testimonial-slider-container .testimonial-slide .testimonial-photo {
   margin: 0 auto;
-  max-width: 250px;
+  max-width: 240px;
 }
 
 .concil .testimonial-slider-container .testimonial-slide .quote-path {
@@ -15550,6 +15589,7 @@ header .top-bar .menu {
 header .top-bar .menu li,
 header .top-bar .menu span,
 header .top-bar .menu a {
+  margin: 5px -1px;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-size: 14px;

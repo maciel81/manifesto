@@ -16,7 +16,7 @@ return [
     'Brewhorne' => [
       'photo' => 'dummy-photo-1',
       'title' => 'Eu sou uma almôndega.',
-      'text' => 'Previamente um Guardian Druid, Brewhorne se desafia com outros tanks. Nada que ele não seja capaz de dominar, já que quando o assunto é fundação, estrutura e defesa ninguém chega aos pés de Kazan.',
+      'text' => 'Previamente um Guardian Druid, Brewhorne se desafia com outros tanks. Nada que ele não seja capaz de dominar, já que quando o assunto é fundação, estrutura e defesa ninguém chega aos pés de Brewhorne.',
     ],
     'Flakharke' => [
       'photo' => 'dummy-photo-3',

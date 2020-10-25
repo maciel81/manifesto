@@ -25,7 +25,7 @@
   </div>
   <nav class="top-bar mean_nav" id="responsive-menu">
     <div class="top-bar-left hide-for-medium">
-      <ul class="vertical menu">
+      <ul class="horizontal menu">
         <li><a href="#concil" class="scroll"><i class="fas fa-biohazard"></i> manifesto</a></li>
         <li><a href="#roster" class="scroll"><i class="fas fa-users"></i> roster</a></li>
         <li><a href="#apply" class="scroll"><i class="far fa-edit"></i> apply</a></li>

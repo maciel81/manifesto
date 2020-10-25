@@ -8,14 +8,13 @@ global.$ = global.jQuery = require('jquery');
 // Foundation
 require('what-input');
 require('foundation-sites');
+/** initialize foundation */
+$(document).foundation();
  
 // App Code
 
 /** jQuery library */
 $(function() {
-
-    /** initialize foundation */
-    $(document).foundation();
 
     /** mean navigation menu scroll to */
     $("#mean_nav ul li a.scroll").on('click', function(e) {

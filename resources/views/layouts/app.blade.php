@@ -19,21 +19,36 @@
 <body>
 
   <!-- start hero section -->
+  <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+    <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+    <div class="title-bar-title">Menu</div>
+  </div>
+  <nav class="top-bar hide-for-medium" id="responsive-menu">
+    <div class="top-bar-left">
+      <ul class="vertical menu">
+        <li><a href="#concil" class="scroll"><i class="fas fa-biohazard"></i> manifesto</a></li>
+        <li><a href="#roster" class="scroll"><i class="fas fa-users"></i> roster</a></li>
+        <li><a href="#apply" class="scroll"><i class="far fa-edit"></i> apply</a></li>
+        <li><a href="https://www.twitch.tv/team/manifesto" target="_blank"><i class="fab fa-twitch"></i> twitch</a>
+        </li>
+        <li><a href="https://www.youtube.com/channel/UCN_ABXExDSgjy7jXp0s8teQ" target="_blank"><i
+              class="fab fa-youtube"></i> youtube</a></li>
+      </ul>
+    </div>
+    <div class="top-bar-right"></div>
+  </nav>
+
   <section class="hero">
     <header>
-      <nav class="top-bar">
-        <div class="top-bar-left">
-          <ul class="menu">
-            <li class="menu-text"></li>
-          </ul>
-        </div>
-        <div class="top-bar-right" id="mean_nav">
-          <ul class="vertical medium-horizontal menu menu-links">
+      <nav class="top-bar show-for-medium">
+        <div class="top-bar-right">
+          <ul class="horizontal menu">
             <li><a href="#concil" class="scroll"><i class="fas fa-biohazard"></i> manifesto</a></li>
             <li><a href="#roster" class="scroll"><i class="fas fa-users"></i> roster</a></li>
             <li><a href="#apply" class="scroll"><i class="far fa-edit"></i> apply</a></li>
             <li><a>|</a></li>
-            <li><a href="https://www.twitch.tv/team/manifesto" target="_blank"><i class="fab fa-twitch"></i> twitch</a>
+            <li><a href="https://www.twitch.tv/team/manifesto" target="_blank"><i class="fab fa-twitch"></i>
+                twitch</a>
             </li>
             <li><a href="https://www.youtube.com/channel/UCN_ABXExDSgjy7jXp0s8teQ" target="_blank"><i
                   class="fab fa-youtube"></i> youtube</a></li>
@@ -58,51 +73,53 @@
     <!-- slider code -->
     <div class="orbit testimonial-slider-container" id="app-concil" role="region" aria-label="testimonial-slider"
       data-orbit>
-      <ul class="orbit-container">
-        <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span><i
-            class="fas fa-angle-left"></i></button>
-        <button class="orbit-next"><span class="show-for-sr">Next Slide </span><i
-            class="fas fa-angle-right"></i></button>
+      <div class="large-10">
+        <ul class="orbit-container">
+          <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span><i
+              class="fas fa-angle-left"></i></button>
+          <button class="orbit-next"><span class="show-for-sr">Next Slide </span><i
+              class="fas fa-angle-right"></i></button>
 
-        <!-- content slide -->
-        @foreach(config('global.testimonials') as $k => $v)
-        <li class="orbit-slide">
-          <div class="testimonial-slide">
-            <div class="grid-x grid-margin-x grid-padding-x">
-              <div class="cell small-12 medium-9">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="41px" height="34px"
-                  viewBox="-235 240 41 34" style="enable-background:new -235 240 41 34;" xml:space="preserve">
-                  <path class="quote-path" d="M-231.3,260.4c0-5,1.3-8.8,3.7-11.7c2.4-2.8,6-4.6,10.5-5.5v5c-3.5,1-6,2.8-7.1,5.5c-0.7,1.4-0.9,2.8-0.8,4
+          <!-- content slide -->
+          @foreach(config('global.testimonials') as $k => $v)
+          <li class="orbit-slide">
+            <div class="testimonial-slide">
+              <div class="grid-x grid-margin-x">
+                <div class="cell small-12 medium-8">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="41px" height="34px"
+                    viewBox="-235 240 41 34" style="enable-background:new -235 240 41 34;" xml:space="preserve">
+                    <path class="quote-path" d="M-231.3,260.4c0-5,1.3-8.8,3.7-11.7c2.4-2.8,6-4.6,10.5-5.5v5c-3.5,1-6,2.8-7.1,5.5c-0.7,1.4-0.9,2.8-0.8,4
                             h8.1v12.8h-14.4V260.4z" />
-                  <path class="quote-path" d="M-212,260.4c0-5,1.3-8.8,3.7-11.7c2.4-2.8,6-4.6,10.5-5.5v5c-3.5,1-6,2.8-7.1,5.5c-0.7,1.4-0.9,2.8-0.8,4h8.1
+                    <path class="quote-path" d="M-212,260.4c0-5,1.3-8.8,3.7-11.7c2.4-2.8,6-4.6,10.5-5.5v5c-3.5,1-6,2.8-7.1,5.5c-0.7,1.4-0.9,2.8-0.8,4h8.1
                             v12.8H-212V260.4z" />
-                </svg>
-                <p class="testimonial-title">
-                  {{ $v['title'] }}
-                </p>
-                <p class="testimonial-author">by <span class="author">{{ $k }}</span></p>
-                <br />
-                <p class="testimonial-text">{{ $v['text'] }}</p>
-              </div>
-              <div class="cell small-12 medium-3 align-self-middle testimonial-photo">
-                <img src="{{ asset("images/{$v['photo']}.jpg") }}">
+                  </svg>
+                  <p class="testimonial-title">
+                    {{ $v['title'] }}
+                  </p>
+                  <p class="testimonial-author">by <span class="author">{{ $k }}</span></p>
+                  <br />
+                  <p class="testimonial-text">{{ $v['text'] }}</p>
+                </div>
+                <div class="cell small-6 medium-3 text-center testimonial-photo">
+                  <img src="{{ asset("images/{$v['photo']}.jpg") }}">
+                </div>
               </div>
             </div>
-          </div>
-        </li>
-        @endforeach
-        <!-- end content slide -->
+          </li>
+          @endforeach
+          <!-- end content slide -->
 
-      </ul>
-      <nav class="orbit-bullets">
-        <button class="is-active" data-slide="0">
-          <span class="show-for-sr">First slide details.</span>
-          <span class="show-for-sr" data-slide-active-label>Current Slide</span>
-        </button>
-        @for ($i = 1; $i < sizeof(config('global.testimonials')); $i++) <button data-slide="{{ $i }}"></button>
-          @endfor
-      </nav>
+        </ul>
+        <nav class="orbit-bullets hide-for-small">
+          <button class="is-active" data-slide="0">
+            <span class="show-for-sr">First slide details.</span>
+            <span class="show-for-sr" data-slide-active-label>Current Slide</span>
+          </button>
+          @for ($i = 1; $i < sizeof(config('global.testimonials')); $i++) <button data-slide="{{ $i }}"></button>
+            @endfor
+        </nav>
+      </div>
     </div>
     <!-- slider close -->
 
@@ -150,10 +167,6 @@
 
   <!-- start contact section -->
   <footer class="apply" id="apply">
-    {{-- <div class="title">
-      <p class="mean_title">Para que <span class="strong">todos</span> possam ser ouvidos.</p>
-      <p class="sub_title">&nbsp;</p>
-    </div> --}}
     <div class="grid-x grid-margin-x">
       <div class="cell small-12 medium-6 large-7">
         <p class="assign">Se você deseja fazer parte do nosso grupo (espero que o zeto faça um texto melhor, que
@@ -162,14 +175,14 @@
           mensagem de apoio
           aqui ao lado.</p>
       </div>
-      <div class="cell small-12 medium-5 large-3 large-offset-1">
+      <div class="cell small-12 medium-5 large-3 large-offset-1 form_control">
         <div class="translucent-form-overlay">
           <form>
             <p>É aqui mesmo</p>
             <input type="text" name="nome" placeholder="Seu nome">
             <input type="text" name="email" placeholder="Seu email">
             <textarea name="mensagem" placeholder="O que você procesa de nós?" rows="3"></textarea>
-            <button type="button" class="primary button expanded warning hollow">
+            <button type="button" class="primary button warning hollow float-left">
               É só clicar para enviar
             </button>
           </form>

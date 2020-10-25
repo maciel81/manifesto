@@ -9147,6 +9147,18 @@ html.is-reveal-open body {
           animation-delay: 700ms !important;
 }
 
+@media print, screen and (max-width: 39.99875em) {
+  .no-js .top-bar {
+    display: none;
+  }
+}
+
+@media print, screen and (min-width: 40em) {
+  .no-js .title-bar {
+    display: none;
+  }
+}
+
 /*!
  * Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -15348,7 +15360,6 @@ body {
 }
 
 .concil .testimonial-slider-container {
-  width: calc(75%);
   margin: 0 auto;
 }
 
@@ -15361,14 +15372,13 @@ body {
 .concil .testimonial-slider-container .testimonial-slide {
   min-height: 350px;
   border: 1px dashed rgba(225, 215, 166, 0.8);
-  padding: 30px;
-  vertical-align: baseline;
+  padding: 40px;
 }
 
 .concil .testimonial-slider-container .testimonial-slide .testimonial-title,
 .concil .testimonial-slider-container .testimonial-slide .testimonial-author,
 .concil .testimonial-slider-container .testimonial-slide .testimonial-text {
-  padding: 0 3rem 0 1rem;
+  padding: 0 1rem;
 }
 
 .concil .testimonial-slider-container .testimonial-slide .testimonial-title,
@@ -15403,7 +15413,7 @@ body {
 }
 
 .concil .testimonial-slider-container .testimonial-slide .testimonial-photo {
-  margin: auto -10px;
+  margin: 0 auto;
   padding: 10px 0;
 }
 
@@ -15562,7 +15572,7 @@ footer {
   position: relative;
   background: linear-gradient(to bottom, rgba(44, 56, 64, 0.8), black);
   margin: 0 auto;
-  padding-top: 15px;
+  padding: 15px;
   text-align: center;
 }
 
@@ -15606,6 +15616,7 @@ footer .assign a {
 
 footer .translucent-form-overlay {
   color: #fefefe;
+  padding: 20px;
 }
 
 footer .translucent-form-overlay input,

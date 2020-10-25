@@ -87,14 +87,14 @@ class BlizzardController extends Controller
             $name = $roster[$x]['character']['name'];
             $rank = $roster[$x]['rank'];
 
-            if ($rank <= 2) {
+            if ($rank === 1 || $rank === 2) {
 
                 $mediaUrl = config('blizzard.urlBaseProfile')
-                . "/" . config('blizzard.realm')
-                . "/" . strtolower($name)
-                . "/character-media?namespace=" . config('blizzard.namespaceProfile')
-                . "&locale=" . config('blizzard.locale')
-                . "&access_token=" . $apiToken;
+                    . "/" . config('blizzard.realm')
+                    . "/" . strtolower($name)
+                    . "/character-media?namespace=" . config('blizzard.namespaceProfile')
+                    . "&locale=" . config('blizzard.locale')
+                    . "&access_token=" . $apiToken;
                 $responseMedia = $http->get($mediaUrl);
                 $mediaCharacter = json_decode((string) $responseMedia->getBody(), true)['assets'][3]['value'];
 
@@ -118,7 +118,6 @@ class BlizzardController extends Controller
                         'image' => $mediaCharacter,
                     ];
                 }
-
             }
         }
     }

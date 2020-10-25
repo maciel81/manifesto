@@ -15563,7 +15563,7 @@ body {
 
 /** header */
 
-@media (max-width: 639px) {
+@media (max-width: 640px) {
   .mean_nav {
     background-color: #111111;
     padding: 0 20px;
@@ -15584,7 +15584,7 @@ body {
   }
 }
 
-@media (min-width: 640px) and (max-width: 1279px) {
+@media (min-width: 641px) and (max-width: 1279px) {
   header .top-bar {
     background-color: transparent;
     height: 80px;

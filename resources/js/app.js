@@ -17,7 +17,7 @@ $(document).foundation();
 $(function() {
 
     /** mean navigation menu scroll to */
-    $(".mean_nav ul li a").on('click', function(e) {
+    $(".mean_nav ul li a.scroll").on('click', function(e) {
         e.preventDefault();
         scrollTo($(this).attr("href"), 900, "easeInOutCubic");
     });

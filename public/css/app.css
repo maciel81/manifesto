@@ -15413,7 +15413,7 @@ body {
 
 .concil .testimonial-slider-container .testimonial-slide .testimonial-photo {
   margin: 0 auto;
-  padding: 10px 0;
+  max-width: 250px;
 }
 
 .concil .testimonial-slider-container .testimonial-slide .quote-path {

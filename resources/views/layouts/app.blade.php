@@ -100,7 +100,7 @@
                   <br />
                   <p class="testimonial-text">{{ $v['text'] }}</p>
                 </div>
-                <div class="cell small-6 medium-3 text-center testimonial-photo">
+                <div class="cell small-6 medium-4 align-self-middle testimonial-photo">
                   <img src="{{ asset("images/{$v['photo']}.jpg") }}">
                 </div>
               </div>

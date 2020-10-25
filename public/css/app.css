@@ -15344,20 +15344,6 @@ body {
   }
 }
 
-@media (max-width: 639px) {
-  .hero {
-    background-color: #111111;
-  }
-
-  .hero img {
-    margin: auto;
-  }
-
-  .hero .top-bar .top-bar ul {
-    background-color: #0a0a0a;
-  }
-}
-
 @media (min-width: 640px) {
   .hero {
     background-image: linear-gradient(to bottom, rgba(225, 215, 166, 0.1), rgba(17, 17, 17, 0.5)), url(/images/hero-manifesto.png?4066d0205e20510ec5e79843152cf259);
@@ -15577,31 +15563,79 @@ body {
 
 /** header */
 
-header .top-bar {
-  background-color: transparent;
-  padding: 0 20px;
+@media (max-width: 639px) {
+  .mean_nav {
+    background-color: #111111;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .mean_nav .menu {
+    background-color: transparent;
+  }
+
+  .mean_nav .menu li,
+  .mean_nav .menu a {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fefefe;
+    font-weight: bold;
+  }
 }
 
-header .top-bar .menu {
-  background-color: transparent;
-  margin-top: calc(5%);
+@media (min-width: 640px) and (max-width: 1279px) {
+  header .top-bar {
+    background-color: transparent;
+    height: 80px;
+  }
+
+  header .top-bar .menu {
+    background-color: transparent;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  header .top-bar .menu li,
+  header .top-bar .menu a {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #3e1c00;
+    font-weight: bold;
+  }
+
+  header .top-bar .menu li :hover,
+  header .top-bar .menu a :hover {
+    text-shadow: 1px 1px #494949;
+  }
 }
 
-header .top-bar .menu li,
-header .top-bar .menu span,
-header .top-bar .menu a {
-  margin: 5px -1px;
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  font-size: 14px;
-  color: #3e1c00;
-  font-weight: bold;
-}
+@media (min-width: 1280px) {
+  header .top-bar {
+    height: 110px;
+    background-color: transparent;
+  }
 
-header .top-bar .menu li :hover,
-header .top-bar .menu span :hover,
-header .top-bar .menu a :hover {
-  text-shadow: 1px 1px #494949;
+  header .top-bar .menu {
+    padding: 0;
+    margin: 0 auto;
+    background-color: transparent;
+  }
+
+  header .top-bar .menu li,
+  header .top-bar .menu a {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #3e1c00;
+    font-weight: bold;
+  }
+
+  header .top-bar .menu li :hover,
+  header .top-bar .menu a :hover {
+    text-shadow: 1px 1px #494949;
+  }
 }
 
 /** apply **/

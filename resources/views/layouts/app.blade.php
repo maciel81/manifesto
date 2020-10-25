@@ -23,8 +23,8 @@
     <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
     <div class="title-bar-title">Guilda Manifesto - World of Warcraft</div>
   </div>
-  <nav class="top-bar mean_nav" id="responsive-menu">
-    <div class="top-bar-left hide-for-medium">
+  <nav class="top-bar mean_nav hide-for-medium" id="responsive-menu">
+    <div class="top-bar-left">
       <ul class="horizontal menu">
         <li><a href="#concil" class="scroll"><i class="fas fa-biohazard"></i> manifesto</a></li>
         <li><a href="#roster" class="scroll"><i class="fas fa-users"></i> roster</a></li>
@@ -40,7 +40,7 @@
 
   <section class="hero">
     <header>
-      <nav class="top-bar show-for-medium mean_nav">
+      <nav class="top-bar show-for-medium">
         <div class="top-bar-right">
           <ul class="horizontal menu">
             <li><a href="#concil" class="scroll"><i class="fas fa-biohazard"></i> manifesto</a></li>

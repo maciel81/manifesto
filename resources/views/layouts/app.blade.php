@@ -69,11 +69,10 @@
         <em>"Na batalha, o primeiro passo para a vitória é o desejo de vencer!"</em>
       </p>
     </div>
-
-    <!-- slider code -->
-    <div class="orbit testimonial-slider-container" id="app-concil" role="region" aria-label="testimonial-slider"
-      data-orbit>
-      <div class="large-10">
+    <div class="cell large-10">
+      <!-- slider code -->
+      <div class="orbit testimonial-slider-container id=" app-concil" role="region" aria-label="testimonial-slider"
+        data-orbit>
         <ul class="orbit-container">
           <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span><i
               class="fas fa-angle-left"></i></button>
@@ -120,9 +119,8 @@
             @endfor
         </nav>
       </div>
+      <!-- slider close -->
     </div>
-    <!-- slider close -->
-
   </section>
   <!-- end concil section -->
 
